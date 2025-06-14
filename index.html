@@ -1,122 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LARA & ASOCIADOS CONSULTORES LEGALES</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    :root {
-      --azul: #06326E;
-      --verde: #007A82;
-    }
-
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    header {
-      background-color: var(--azul);
-      color: white;
-      padding: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      color: #06326E;
       text-align: center;
     }
-
-    nav {
-      background-color: var(--verde);
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
+    header img {
+      max-width: 400px;
+      margin-top: 30px;
     }
-
-    nav a {
-      color: white;
-      text-decoration: none;
+    h1 {
+      font-size: 2em;
+      color: #06326E;
+      font-family: 'Georgia', serif;
+    }
+    h2 {
+      font-size: 1em;
+      color: #007A82;
+      font-weight: normal;
+      margin-top: 0.5em;
+    }
+    .buttons {
+      margin-top: 2em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      margin: 0.5em;
+      border: none;
+      border-radius: 25px;
+      background-color: #e6e6e6;
+      color: #06326E;
       font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    section:nth-child(even) {
-      background-color: #f4f4f4;
-    }
-
-    footer {
-      background-color: var(--azul);
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    .btn:hover {
+      background-color: #cccccc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>LARA & ASOCIADOS CONSULTORES LEGALES</h1>
-    <p>La protección jurídica de todos sus negocios, evitando contingencias legales, es nuestro compromiso.</p>
+    <img src="logo.png" alt="Lara & Asociados Logo">
   </header>
-
-  <nav>
-    <a href="#presentacion">Inicio</a>
-    <a href="#firma">Nuestra Firma</a>
-    <a href="#mision">Misión/Visión</a>
-    <a href="#filosofia">Filosofía</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#staff">Staff</a>
-    <a href="#estructura">Estructura</a>
-    <a href="#clientes">Clientes</a>
-  </nav>
-
-  <section id="presentacion">
-    <h2>Presentación</h2>
-    <p>[Contenido de presentación...]</p>
-  </section>
-
-  <section id="firma">
-    <h2>Nuestra Firma a su servicio</h2>
-    <p>[Contenido sobre la firma...]</p>
-  </section>
-
-  <section id="mision">
-    <h2>Nuestra misión, visión y valores</h2>
-    <p>[Contenido de misión, visión y valores...]</p>
-  </section>
-
-  <section id="filosofia">
-    <h2>Nuestra Filosofía</h2>
-    <p>[Contenido de filosofía...]</p>
-  </section>
-
-  <section id="servicios">
-    <h2>Nuestros Servicios en Áreas de Especialización</h2>
-    <p>[Lista de servicios...]</p>
-  </section>
-
-  <section id="staff">
-    <h2>Nuestro Staff de Profesionales</h2>
-    <p>[Perfiles del equipo...]</p>
-  </section>
-
-  <section id="estructura">
-    <h2>Nuestra Estructura Organizacional</h2>
-    <p>[Descripción o diagrama...]</p>
-  </section>
-
-  <section id="clientes">
-    <h2>Nuestros Clientes</h2>
-    <p>[Lista o logos de clientes...]</p>
-  </section>
-
-  <footer>
-    <p>Contacto: paul.lara@larayasociados.com.ec | (593) 2 226 8964 | (593) 99 514 5355<br>
-    Dirección: Manuel María Sánchez E12-158 y Carlos Arroyo del Río, Quito - Ecuador</p>
-  </footer>
+  <main>
+    <h1>Nuestra Firma a su Servicio</h1>
+    <h2>La protección jurídica de sus negocios es nuestro compromiso.... Sus problemas y conflictos legales están en buenas manos</h2>
+    <div class="buttons">
+      <a href="#" class="btn">CONOZCA QUIENES SOMOS</a>
+      <a href="#" class="btn">CONTACTENOS</a>
+    </div>
+  </main>
 </body>
 </html>
