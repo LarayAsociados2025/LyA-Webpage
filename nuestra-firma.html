@@ -30,35 +30,29 @@
       font-size: 3rem;
       margin: 0;
     }
-    /* Recuadro para imagen más pequeño */
+    /* Recuadro para imagen (Bloque 1) */
     #logo-placeholder {
-      width: 33.33%;  /* la mitad de antes */
-      height: 200px;   /* la mitad de antes */
+      width: 33.33%;
+      height: 200px;
       border: 2px dashed #007A82;
       box-sizing: border-box;
       margin: 20px 0 20px 40px;
       float: left;
     }
-    main {
-      max-width: 900px;
-      margin-left: 40px;
-      padding: 0 20px;
-      overflow: hidden;
+
+    /* Bloque 2 alineado a la derecha del logo */
+    #bloque2 {
+      width: 55%;
+      float: right;
+      margin: 20px 40px 20px 20px;
     }
 
-    /* Bloques imaginarios */
+    /* Bloques 3, 4, 5 debajo de los anteriores */
     .bloque {
-      margin-bottom: 40px;
+      margin: 40px;
+      clear: both;
     }
 
-    h2 {
-      color: #007A82;
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 1.8rem;
-      border-bottom: 3px solid #007A82;
-      padding-bottom: 8px;
-    }
     p {
       margin-bottom: 18px;
       font-size: 1rem;
@@ -101,24 +95,23 @@
     <h1>Nuestra Firma</h1>
   </header>
 
+  <!-- BLOQUE 1: Recuadro de imagen -->
   <div id="logo-placeholder" title="Aquí irá el logo"></div>
 
-  <main>
-    <!-- BLOQUE 1 -->
-    <div class="bloque" id="bloque1"></div>
+  <!-- BLOQUE 2: Texto alineado a la derecha del recuadro -->
+  <div id="bloque2">
+    <p><em>Lara & Asociados Consultores Legales</em> es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.</p>
+    <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
+  </div>
 
-    <!-- BLOQUE 2 -->
-    <div class="bloque" id="bloque2"></div>
+  <!-- BLOQUE 3 -->
+  <div class="bloque" id="bloque3"></div>
 
-    <!-- BLOQUE 3 -->
-    <div class="bloque" id="bloque3"></div>
+  <!-- BLOQUE 4 -->
+  <div class="bloque" id="bloque4"></div>
 
-    <!-- BLOQUE 4 -->
-    <div class="bloque" id="bloque4"></div>
-
-    <!-- BLOQUE 5 -->
-    <div class="bloque" id="bloque5"></div>
-  </main>
+  <!-- BLOQUE 5 -->
+  <div class="bloque" id="bloque5"></div>
 
   <nav>
     <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
