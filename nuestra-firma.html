@@ -7,7 +7,6 @@
   <style>
     @font-face {
       font-family: 'Edwardian Script ITC';
-      /* Asumimos que ya está incorporada en la web o instalada en el sistema */
     }
     body {
       font-family: Arial, sans-serif;
@@ -17,11 +16,11 @@
       line-height: 1.6;
     }
     header {
-      background-color: #06326E; /* azul corporativo */
+      background-color: #06326E;
       color: white;
       display: flex;
-      justify-content: center; /* Centrar horizontalmente */
-      align-items: center;     /* Centrar verticalmente */
+      justify-content: center;
+      align-items: center;
       height: 100px;
       padding: 0 40px;
       box-sizing: border-box;
@@ -31,21 +30,27 @@
       font-size: 3rem;
       margin: 0;
     }
-    /* Recuadro para imagen debajo del header, lado izquierdo */
+    /* Recuadro para imagen más pequeño */
     #logo-placeholder {
-      width: 66.66%; /* dos tercios del ancho */
-      height: 400px;
-      border: 2px dashed #007A82; /* verde corporativo */
+      width: 33.33%;  /* la mitad de antes */
+      height: 200px;   /* la mitad de antes */
+      border: 2px dashed #007A82;
       box-sizing: border-box;
-      margin: 20px 0 40px 40px;
+      margin: 20px 0 20px 40px;
       float: left;
     }
     main {
       max-width: 900px;
-      margin-left: 40px; /* deja espacio al lado derecho del recuadro */
+      margin-left: 40px;
       padding: 0 20px;
-      overflow: hidden; /* para contener el float */
+      overflow: hidden;
     }
+
+    /* Bloques imaginarios */
+    .bloque {
+      margin-bottom: 40px;
+    }
+
     h2 {
       color: #007A82;
       margin-bottom: 20px;
@@ -58,7 +63,7 @@
       margin-bottom: 18px;
       font-size: 1rem;
     }
-    /* Botoneras al final */
+
     nav {
       max-width: 900px;
       margin: 40px auto 60px auto;
@@ -69,7 +74,7 @@
       display: inline-block;
       margin: 8px 12px;
       padding: 10px 18px;
-      background-color: #007A82; /* verde corporativo */
+      background-color: #007A82;
       color: white;
       text-decoration: none;
       font-weight: 600;
@@ -80,12 +85,7 @@
     nav a:hover {
       background-color: #005f5f;
     }
-    /* Eliminar botonera de la página actual (Nuestra Firma) */
-    nav a.disabled {
-      background-color: #004d4d;
-      cursor: default;
-      pointer-events: none;
-    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -104,23 +104,20 @@
   <div id="logo-placeholder" title="Aquí irá el logo"></div>
 
   <main>
-    <h2>Compromiso y Excelencia Legal</h2>
-    <p>
-      En <strong>LARA & ASOCIADOS CONSULTORES LEGALES</strong> somos una firma comprometida con la
-      excelencia profesional y la atención personalizada a cada uno de nuestros clientes.
-    </p>
-    <p>
-      Nuestra trayectoria se basa en la ética, el respeto y la dedicación absoluta para brindar soluciones legales
-      que protejan sus intereses con la mayor eficacia.
-    </p>
-    <p>
-      Contamos con un equipo multidisciplinario de abogados especializados en diversas áreas del derecho,
-      preparados para ofrecer asesoría estratégica, representación legal y acompañamiento integral.
-    </p>
-    <p>
-      La confianza que depositan en nosotros es el motor que impulsa nuestro trabajo diario, asegurando un
-      servicio transparente, responsable y orientado a resultados.
-    </p>
+    <!-- BLOQUE 1 -->
+    <div class="bloque" id="bloque1"></div>
+
+    <!-- BLOQUE 2 -->
+    <div class="bloque" id="bloque2"></div>
+
+    <!-- BLOQUE 3 -->
+    <div class="bloque" id="bloque3"></div>
+
+    <!-- BLOQUE 4 -->
+    <div class="bloque" id="bloque4"></div>
+
+    <!-- BLOQUE 5 -->
+    <div class="bloque" id="bloque5"></div>
   </main>
 
   <nav>
