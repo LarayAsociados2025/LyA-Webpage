@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,6 +11,28 @@
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #06326E;
+      text-align: center;
+    }
+
+    /* LOGO Y TEXTOS DE CABECERA */
+    header img {
+      max-width: 400px;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #06326E;
+      font-family: 'Georgia', serif;
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 1em;
+      color: #007A82;
+      font-weight: normal;
+      margin-top: 0.5em;
+      margin-bottom: 40px;
     }
 
     /* BOTONES */
@@ -17,7 +40,7 @@
       display: block;
       margin: 10px auto;
       padding: 0;
-      background-color: #06326E; /* azul corporativo */
+      background-color: #06326E;
       color: white;
       text-decoration: none;
       font-size: 16px;
@@ -34,7 +57,7 @@
     }
 
     .boton:hover {
-      background-color: #007A82; /* verde corporativo */
+      background-color: #007A82;
     }
 
     /* PRESENTACIÓN */
@@ -42,9 +65,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+      justify-content: flex-start;
+      min-height: 100vh;
       padding: 20px;
     }
 
@@ -67,8 +89,14 @@
 </head>
 <body>
 
-  <!-- SECCIÓN DE PRESENTACIÓN CON BOTONERAS -->
+  <!-- SECCIÓN DE PRESENTACIÓN CON LOGO, TEXTOS Y BOTONERAS -->
   <section id="presentacion">
+    <header>
+      <img src="logo.png" alt="Lara & Asociados Logo">
+    </header>
+    <h1>Nuestra Firma a su Servicio</h1>
+    <h2>La protección jurídica de sus negocios es nuestro compromiso.... Sus problemas y conflictos legales están en buenas manos</h2>
+
     <a href="#firma" class="boton">NUESTRA FIRMA A SU SERVICIO</a>
     <a href="#mision" class="boton">NUESTRA MISIÓN, VISIÓN Y VALORES</a>
     <a href="#filosofia" class="boton">NUESTRA FILOSOFÍA</a>
