@@ -30,6 +30,7 @@
       font-size: 3rem;
       margin: 0;
     }
+
     /* Recuadro para imagen (Bloque 1) */
     #logo-placeholder {
       width: 33.33%;
@@ -40,22 +41,28 @@
       float: left;
     }
 
-    /* Bloque 2 alineado a la derecha del logo */
+    /* Bloque 2 a la derecha del logo */
     #bloque2 {
       width: 55%;
       float: right;
       margin: 20px 40px 20px 20px;
     }
 
-    /* Bloques 3, 4, 5 debajo de los anteriores */
+    /* Bloque 3 debajo de la imagen, lado izquierdo */
+    #bloque3 {
+      width: 50%;
+      float: left;
+      margin: 40px 0 20px 40px;
+    }
+
+    /* Otros bloques (por si los necesitas luego) */
     .bloque {
       margin: 40px;
       clear: both;
     }
 
-    p {
-      margin-bottom: 18px;
-      font-size: 1rem;
+    ul {
+      padding-left: 20px;
     }
 
     nav {
@@ -95,24 +102,30 @@
     <h1>Nuestra Firma</h1>
   </header>
 
-  <!-- BLOQUE 1: Recuadro de imagen -->
+  <!-- BLOQUE 1 -->
   <div id="logo-placeholder" title="Aquí irá el logo"></div>
 
-  <!-- BLOQUE 2: Texto alineado a la derecha del recuadro -->
+  <!-- BLOQUE 2 -->
   <div id="bloque2">
-    <p><em>Lara & Asociados Consultores Legales</em> es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.</p>
+    <p><strong>Lara & Asociados Consultores Legales</strong> es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.</p>
     <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
   </div>
 
   <!-- BLOQUE 3 -->
-  <div class="bloque" id="bloque3"></div>
+  <div id="bloque3">
+    <p><strong>¿Qué nos Distingue?</strong></p>
+    <ul>
+      <li><em>Enfoque integral:</em> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
+      <li><em>Equipo multidisciplinario:</em> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
+      <li><em>Portafolio especializado:</em> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
+    </ul>
+  </div>
 
-  <!-- BLOQUE 4 -->
+  <!-- BLOQUES 4 Y 5 -->
   <div class="bloque" id="bloque4"></div>
-
-  <!-- BLOQUE 5 -->
   <div class="bloque" id="bloque5"></div>
 
+  <!-- BOTONERAS -->
   <nav>
     <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
     <a href="filosofia.html">Filosofía</a>
