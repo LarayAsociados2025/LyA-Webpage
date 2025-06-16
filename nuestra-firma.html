@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nuestra Firma - LARA & ASOCIADOS</title>
   <style>
+    @font-face {
+      font-family: 'Edwardian Script ITC';
+      /* Asumimos que ya está incorporada en la web o instalada en el sistema */
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
@@ -13,15 +17,25 @@
       line-height: 1.6;
     }
     header {
-      background-color: #007A82;
+      background-color: #06326E; /* azul corporativo */
       color: white;
+      display: flex;
+      align-items: center;
       padding: 20px 40px;
-      text-align: center;
+      gap: 20px;
+    }
+    /* Recuadro para imagen en esquina superior izquierda */
+    #logo-placeholder {
+      width: 80px;
+      height: 80px;
+      border: 2px dashed #007A82; /* verde corporativo */
+      box-sizing: border-box;
+      flex-shrink: 0;
     }
     header h1 {
+      font-family: 'Edwardian Script ITC', cursive;
+      font-size: 3rem;
       margin: 0;
-      font-weight: 700;
-      font-size: 2.2rem;
     }
     main {
       max-width: 900px;
@@ -40,23 +54,32 @@
       margin-bottom: 18px;
       font-size: 1rem;
     }
+    /* Botoneras al final */
     nav {
-      margin: 20px 0;
+      max-width: 900px;
+      margin: 40px auto 60px auto;
       text-align: center;
     }
     nav a {
       display: inline-block;
-      margin: 0 12px;
-      padding: 8px 20px;
-      background-color: #06326E;
+      margin: 8px 12px;
+      padding: 10px 18px;
+      background-color: #007A82; /* verde corporativo */
       color: white;
       text-decoration: none;
       font-weight: 600;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      min-width: 140px;
     }
     nav a:hover {
       background-color: #005f5f;
+    }
+    /* Eliminar botonera de la página actual (Nuestra Firma) */
+    nav a.disabled {
+      background-color: #004d4d;
+      cursor: default;
+      pointer-events: none;
     }
     footer {
       text-align: center;
@@ -70,14 +93,9 @@
 </head>
 <body>
   <header>
+    <div id="logo-placeholder" title="Aquí irá el logo"></div>
     <h1>Nuestra Firma</h1>
   </header>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="staff.html">Staff</a>
-  </nav>
   <main>
     <h2>Compromiso y Excelencia Legal</h2>
     <p>
@@ -97,6 +115,16 @@
       servicio transparente, responsable y orientado a resultados.
     </p>
   </main>
+  <nav>
+    <a href="presentacion.html">Presentación</a>
+    <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
+    <a href="filosofia.html">Filosofía</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="staff.html">Staff</a>
+    <a href="estructura-organizacional.html">Estructura Organizacional</a>
+    <a href="clientes.html">Clientes</a>
+    <a href="index.html" title="Volver a la página de presentación">Volver a Inicio</a>
+  </nav>
   <footer>
     &copy; 2025 LARA & ASOCIADOS CONSULTORES LEGALES. Todos los derechos reservados.
   </footer>
