@@ -10,11 +10,13 @@
     }
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       background: #ffffff;
       color: #06326E;
       line-height: 1.6;
     }
+
     header {
       background-color: #06326E;
       color: white;
@@ -25,13 +27,14 @@
       padding: 0 40px;
       box-sizing: border-box;
     }
+
     header h1 {
       font-family: 'Edwardian Script ITC', cursive;
       font-size: 3rem;
       margin: 0;
     }
 
-    /* Recuadro para imagen (Bloque 1) */
+    /* BLOQUE 1: Recuadro imagen */
     #logo-placeholder {
       width: 33.33%;
       height: 200px;
@@ -41,36 +44,42 @@
       float: left;
     }
 
-    /* Bloque 2 a la derecha del logo */
+    /* BLOQUE 2: Texto a la derecha */
     #bloque2 {
       width: 55%;
       float: right;
       margin: 20px 40px 20px 20px;
     }
 
-    /* Bloque 3 debajo de la imagen, lado izquierdo */
+    /* BLOQUE 3: parte inferior izquierda */
     #bloque3 {
       width: 50%;
       float: left;
       margin: 40px 0 20px 40px;
     }
 
-    /* Otros bloques (por si los necesitas luego) */
-    .bloque {
-      margin: 40px;
-      clear: both;
+    /* BLOQUE 4: parte inferior derecha */
+    #bloque4 {
+      width: 45%;
+      float: right;
+      margin: 40px 40px 0 20px;
     }
 
     ul {
       padding-left: 20px;
     }
 
+    ul li {
+      margin-bottom: 12px;
+    }
+
     nav {
       max-width: 900px;
-      margin: 40px auto 60px auto;
+      margin: 60px auto;
       text-align: center;
       clear: both;
     }
+
     nav a {
       display: inline-block;
       margin: 8px 12px;
@@ -83,6 +92,7 @@
       transition: background-color 0.3s ease;
       min-width: 140px;
     }
+
     nav a:hover {
       background-color: #005f5f;
     }
@@ -93,16 +103,17 @@
       font-size: 0.9rem;
       color: #555;
       border-top: 1px solid #ddd;
-      margin-top: 60px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Nuestra Firma</h1>
   </header>
 
-  <!-- BLOQUE 1 -->
+  <!-- BLOQUE 1: Espacio para logo -->
   <div id="logo-placeholder" title="Aquí irá el logo"></div>
 
   <!-- BLOQUE 2 -->
@@ -121,9 +132,11 @@
     </ul>
   </div>
 
-  <!-- BLOQUES 4 Y 5 -->
-  <div class="bloque" id="bloque4"></div>
-  <div class="bloque" id="bloque5"></div>
+  <!-- BLOQUE 4 -->
+  <div id="bloque4">
+    <p><strong>Su Tranquilidad es Nuestra Prioridad</strong></p>
+    <p>Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.</p>
+  </div>
 
   <!-- BOTONERAS -->
   <nav>
@@ -139,5 +152,6 @@
   <footer>
     &copy; 2025 LARA & ASOCIADOS CONSULTORES LEGALES. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
