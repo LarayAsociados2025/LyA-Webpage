@@ -2,156 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nuestra Firma - LARA & ASOCIADOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra Firma</title>
   <style>
-    @font-face {
-      font-family: 'Edwardian Script ITC';
-    }
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
+      background-color: #ffffff;
       color: #06326E;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #06326E;
-      color: white;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100px;
-      padding: 0 40px;
-      box-sizing: border-box;
+      justify-content: center;
+      padding: 40px;
     }
 
-    header h1 {
-      font-family: 'Edwardian Script ITC', cursive;
-      font-size: 3rem;
-      margin: 0;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
     }
 
-    /* BLOQUE 1: Recuadro imagen */
-    #logo-placeholder {
-      width: 33.33%;
-      height: 200px;
-      border: 2px dashed #007A82;
-      box-sizing: border-box;
-      margin: 20px 0 20px 40px;
-      float: left;
-    }
-
-    /* BLOQUE 2: Texto a la derecha */
-    #bloque2 {
-      width: 55%;
-      float: right;
-      margin: 20px 40px 20px 20px;
-    }
-
-    /* BLOQUE 3: parte inferior izquierda */
-    #bloque3 {
-      width: 50%;
-      float: left;
-      margin: 40px 0 20px 40px;
-    }
-
-    /* BLOQUE 4: parte inferior derecha */
-    #bloque4 {
-      width: 45%;
-      float: right;
-      margin: 40px 40px 0 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 12px;
-    }
-
-    nav {
-      max-width: 900px;
-      margin: 60px auto;
-      text-align: center;
-      clear: both;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 8px 12px;
-      padding: 10px 18px;
-      background-color: #007A82;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      min-width: 140px;
-    }
-
-    nav a:hover {
-      background-color: #005f5f;
-    }
-
-    footer {
-      text-align: center;
+    .bloque {
+      border: 2px solid #007A82;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #555;
-      border-top: 1px solid #ddd;
+      text-align: center;
+      font-weight: bold;
+      background-color: #f2fefe;
+      border-radius: 8px;
+    }
+
+    .bloque1 img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .bloque5 {
+      grid-column: 1 / span 2;
+      justify-self: center;
+      width: 50%;
+    }
+
+    a.volver {
       margin-top: 40px;
+      text-decoration: none;
+      color: white;
+      background-color: #06326E;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    a.volver:hover {
+      background-color: #007A82;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Nuestra Firma</h1>
-  </header>
-
-  <!-- BLOQUE 1: Espacio para logo -->
-  <div id="logo-placeholder" title="Aquí irá el logo"></div>
-
-  <!-- BLOQUE 2 -->
-  <div id="bloque2">
-    <p><strong>Lara & Asociados Consultores Legales</strong> es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.</p>
-    <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
+  <div class="container">
+    <div class="bloque bloque1">
+      <!-- Aquí irá la imagen -->
+      <p>Imagen aquí (Bloque 1)</p>
+    </div>
+    <div class="bloque">BLOQUE 2</div>
+    <div class="bloque">BLOQUE 3</div>
+    <div class="bloque">BLOQUE 4</div>
+    <div class="bloque bloque5">BLOQUE 5</div>
   </div>
 
-  <!-- BLOQUE 3 -->
-  <div id="bloque3">
-    <p><strong>¿Qué nos Distingue?</strong></p>
-    <ul>
-      <li><em>Enfoque integral:</em> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
-      <li><em>Equipo multidisciplinario:</em> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
-      <li><em>Portafolio especializado:</em> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
-    </ul>
-  </div>
-
-  <!-- BLOQUE 4 -->
-  <div id="bloque4">
-    <p><strong>Su Tranquilidad es Nuestra Prioridad</strong></p>
-    <p>Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.</p>
-  </div>
-
-  <!-- BOTONERAS -->
-  <nav>
-    <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
-    <a href="filosofia.html">Filosofía</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="staff.html">Staff</a>
-    <a href="estructura-organizacional.html">Estructura Organizacional</a>
-    <a href="clientes.html">Clientes</a>
-    <a href="index.html" title="Volver a la página de presentación">Volver a Inicio</a>
-  </nav>
-
-  <footer>
-    &copy; 2025 LARA & ASOCIADOS CONSULTORES LEGALES. Todos los derechos reservados.
-  </footer>
+  <a href="index.html" class="volver">← Volver a Presentación</a>
 
 </body>
 </html>
