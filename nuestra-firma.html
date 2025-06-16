@@ -8,95 +8,64 @@
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
+      color: #333333;
       background-color: #fff;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    header img {
-      max-width: 200px;
-      height: auto;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-    nav a {
-      background-color: #007A82;
-      color: white;
-      padding: 12px 18px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      min-width: 140px;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
-    nav a:hover {
-      background-color: #06326E;
-    }
-    nav a.active {
-      background-color: #06326E;
-    }
-    main {
       max-width: 900px;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
-    main h1, main h2 {
-      color: #06326E;
+    h1 {
+      color: #06326E; /* azul corporativo */
     }
-    main p {
+    h2 {
+      color: #007A82; /* verde corporativo */
+    }
+    p {
       line-height: 1.6;
       margin-bottom: 15px;
     }
-    main ul {
+    ul {
       margin-left: 20px;
       margin-bottom: 20px;
     }
-    main ul li em {
+    ul li em {
       font-style: italic;
+    }
+    /* Botón para volver */
+    .btn-volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #007A82;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-volver:hover {
+      background-color: #06326E;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="ruta-de-tu-logo.jpg" alt="Lara & Asociados Logo" />
-  </header>
+  <h1>Nuestra Firma</h1>
 
-  <nav>
-    <a href="presentacion.html">Presentación</a>
-    <a href="nuestra-firma.html" class="active">Nuestra Firma</a>
-    <a href="mision-vision-valores.html">Misión / Visión / Valores</a>
-    <a href="filosofia.html">Filosofía</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="staff.html">Staff</a>
-    <a href="estructura-organizacional.html">Estructura Organizacional</a>
-    <a href="clientes.html">Clientes</a>
-  </nav>
+  <p><strong>Lara & Asociados Consultores Legales</strong> es una firma comprometida con brindar soluciones legales integrales, basadas en la experiencia, ética profesional y un enfoque personalizado para cada cliente.</p>
 
-  <main>
-    <h1>Nuestra Firma</h1>
+  <p>Nuestro equipo está conformado por profesionales multidisciplinarios, altamente capacitados, que garantizan la calidad y eficacia en cada servicio que ofrecemos.</p>
 
-    <p><strong>Lara & Asociados Consultores Legales</strong> es una firma comprometida con brindar soluciones legales integrales, basadas en la experiencia, ética profesional y un enfoque personalizado para cada cliente.</p>
+  <h2>Principios que nos guían</h2>
+  <ul>
+    <li><em>Compromiso ético:</em> Actuamos con responsabilidad, transparencia y respeto hacia nuestros clientes y la comunidad.</li>
+    <li><em>Excelencia técnica:</em> Mantenemos un alto nivel de especialización para ofrecer soluciones efectivas y actualizadas.</li>
+    <li><em>Atención personalizada:</em> Cada cliente recibe un trato dedicado y adaptado a sus necesidades específicas.</li>
+  </ul>
 
-    <p>Nuestro equipo está conformado por profesionales multidisciplinarios, altamente capacitados, que garantizan la calidad y eficacia en cada servicio que ofrecemos.</p>
+  <p>En Lara & Asociados, buscamos no solo resolver problemas legales, sino también construir relaciones de confianza y largo plazo con nuestros clientes.</p>
 
-    <h2>Principios que nos guían</h2>
-    <ul>
-      <li><em>Compromiso ético:</em> Actuamos con responsabilidad, transparencia y respeto hacia nuestros clientes y la comunidad.</li>
-      <li><em>Excelencia técnica:</em> Mantenemos un alto nivel de especialización para ofrecer soluciones efectivas y actualizadas.</li>
-      <li><em>Atención personalizada:</em> Cada cliente recibe un trato dedicado y adaptado a sus necesidades específicas.</li>
-    </ul>
-
-    <p>En Lara & Asociados, buscamos no solo resolver problemas legales, sino también construir relaciones de confianza y largo plazo con nuestros clientes.</p>
-
-  </main>
+  <a href="index.html" class="btn-volver">← Volver a Presentación</a>
 
 </body>
 </html>
