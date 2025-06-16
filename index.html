@@ -25,6 +25,18 @@
       color: #06326E;
       font-family: 'Great Vibes', cursive; /* Edwardian Script ITC no disponible en web estándar */
       margin-top: 20px;
+      text-transform: capitalize;
+    }
+
+    /* Nuevo texto debajo del h1 */
+    .subtitulo {
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      font-size: 1.2em;
+      color: #06326E;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      text-transform: capitalize;
     }
 
     h2 {
@@ -44,16 +56,19 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
+      font-style: italic;
+      font-family: Arial, sans-serif;
       text-align: center;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      width: 300px;
+      width: 320px; /* ancho aumentado para texto largo */
       height: 50px;
       line-height: 50px;
       box-sizing: border-box;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      text-transform: capitalize;
     }
 
     .boton:hover {
@@ -83,11 +98,15 @@
       align-items: center;
     }
 
+    /* Texto final con Arial cursiva y azul corporativo */
     .frase-final {
       font-size: 1.2em;
-      color: #007A82;
+      color: #06326E;
       margin-top: 30px;
       font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      text-transform: capitalize;
     }
 
     /* SECCIONES INTERNAS */
@@ -113,7 +132,11 @@
     <header>
       <img src="logo.png" alt="Lara & Asociados Logo">
     </header>
-    <h1>Nuestra Firma a su Servicio</h1>
+
+    <h1>Nuestra firma a su servicio</h1>
+
+    <!-- Nuevo texto agregado aquí -->
+    <p class="subtitulo">La protección jurídica de sus negocios es nuestro compromiso</p>
 
     <div class="botonera">
       <div class="columna">
@@ -131,7 +154,7 @@
     </div>
 
     <div class="frase-final">
-      SUS PROBLEMAS Y CONFLICTOS LEGALES ESTÁN EN BUENAS MANOS
+      Sus problemas y conflictos legales están en buenas manos
     </div>
   </section>
 
