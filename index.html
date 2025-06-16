@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LARA & ASOCIADOS CONSULTORES LEGALES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -21,9 +21,9 @@
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       color: #06326E;
-      font-family: 'Georgia', serif;
+      font-family: 'Great Vibes', cursive; /* Edwardian Script ITC no disponible en web estándar */
       margin-top: 20px;
     }
 
@@ -38,7 +38,7 @@
     /* BOTONES */
     .boton {
       display: block;
-      margin: 10px auto;
+      margin: 10px;
       padding: 0;
       background-color: #06326E;
       color: white;
@@ -47,7 +47,7 @@
       text-align: center;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      width: 350px;
+      width: 300px;
       height: 50px;
       line-height: 50px;
       box-sizing: border-box;
@@ -60,7 +60,6 @@
       background-color: #007A82;
     }
 
-    /* PRESENTACIÓN */
     #presentacion {
       display: flex;
       flex-direction: column;
@@ -68,6 +67,27 @@
       justify-content: flex-start;
       min-height: 100vh;
       padding: 20px;
+    }
+
+    .botonera {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .columna {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frase-final {
+      font-size: 1.2em;
+      color: #007A82;
+      margin-top: 30px;
+      font-weight: bold;
     }
 
     /* SECCIONES INTERNAS */
@@ -89,63 +109,30 @@
 </head>
 <body>
 
-  <!-- SECCIÓN DE PRESENTACIÓN CON LOGO, TEXTOS Y BOTONERAS -->
   <section id="presentacion">
     <header>
       <img src="logo.png" alt="Lara & Asociados Logo">
     </header>
     <h1>Nuestra Firma a su Servicio</h1>
-    <h2>La protección jurídica de sus negocios es nuestro compromiso.... Sus problemas y conflictos legales están en buenas manos</h2>
 
-    <a href="#firma" class="boton">NUESTRA FIRMA A SU SERVICIO</a>
-    <a href="#mision" class="boton">NUESTRA MISIÓN, VISIÓN Y VALORES</a>
-    <a href="#filosofia" class="boton">NUESTRA FILOSOFÍA</a>
-    <a href="#servicios" class="boton">NUESTROS SERVICIOS ESPECIALIZADOS</a>
-    <a href="#staff" class="boton">NUESTRO STAFF DE PROFESIONALES</a>
-    <a href="#organizacion" class="boton">NUESTRA ORGANIZACIÓN EMPRESARIAL</a>
-    <a href="#clientes" class="boton">NUESTROS CLIENTES</a>
-    <a href="#contacto" class="boton">COMUNÍQUESE CON NOSOTROS</a>
-  </section>
+    <div class="botonera">
+      <div class="columna">
+        <a href="#firma" class="boton">NUESTRA FIRMA A SU SERVICIO</a>
+        <a href="#mision" class="boton">NUESTRA MISIÓN, VISIÓN Y VALORES</a>
+        <a href="#filosofia" class="boton">NUESTRA FILOSOFÍA</a>
+        <a href="#servicios" class="boton">NUESTROS SERVICIOS ESPECIALIZADOS</a>
+      </div>
+      <div class="columna">
+        <a href="#staff" class="boton">NUESTRO STAFF DE PROFESIONALES</a>
+        <a href="#organizacion" class="boton">NUESTRA ORGANIZACIÓN EMPRESARIAL</a>
+        <a href="#clientes" class="boton">NUESTROS CLIENTES</a>
+        <a href="#contacto" class="boton">CONTÁCTESE CON NOSOTROS</a>
+      </div>
+    </div>
 
-  <!-- SECCIONES VACÍAS -->
-  <section id="firma">
-    <h2>NUESTRA FIRMA A SU SERVICIO</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="mision">
-    <h2>NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="filosofia">
-    <h2>NUESTRA FILOSOFÍA</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="servicios">
-    <h2>NUESTROS SERVICIOS ESPECIALIZADOS</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="staff">
-    <h2>NUESTRO STAFF DE PROFESIONALES</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="organizacion">
-    <h2>NUESTRA ORGANIZACIÓN EMPRESARIAL</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="clientes">
-    <h2>NUESTROS CLIENTES</h2>
-    <p>Contenido por agregar...</p>
-  </section>
-
-  <section id="contacto">
-    <h2>COMUNÍQUESE CON NOSOTROS</h2>
-    <p>Contenido por agregar...</p>
+    <div class="frase-final">
+      SUS PROBLEMAS Y CONFLICTOS LEGALES ESTÁN EN BUENAS MANOS
+    </div>
   </section>
 
 </body>
