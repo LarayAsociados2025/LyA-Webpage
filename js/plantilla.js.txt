@@ -1,0 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Cargar encabezado con título dinámico
+  const encabezado = document.getElementById("encabezado");
+  const tituloPagina = document.title;
+
+  if (encabezado) {
+    encabezado.innerHTML = `
+      <div class="titulo-principal">${tituloPagina}</div>
+    `;
+  }
+
+  // Cargar pie de página con botonera
+  const footer = document.getElementById("footer");
+
+  if (footer) {
+    footer.innerHTML = `
+      <div class="footer">
+        <a href="../index.html">Página de Inicio</a>
+        <a href="nuestra-firma.html">Nuestra Firma</a>
+        <a href="mision-vision-valores.html">Misión, Visión y Valores</a>
+        <a href="filosofia.html">Filosofía</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="staff.html">Staff</a>
+        <a href="estructura-organizacional.html">Organización</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contacto.html">Contáctenos</a>
+      </div>
+    `;
+  }
+});
