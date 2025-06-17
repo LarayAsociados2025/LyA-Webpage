@@ -1,125 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Nuestra Firma</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #06326E;
-    }
-
-    .titulo {
-      background-color: #06326E;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 2.5em;
-      font-family: 'Great Vibes', cursive;
-    }
-
-    .contenido {
-      padding: 40px 60px;
-    }
-
-    .bloque {
-      margin-bottom: 30px;
-      text-align: justify;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    .bloque h2 {
-      color: #06326E;
-      font-weight: bold;
-    }
-
-    .bloque ul {
-      list-style-type: disc;
-      margin-left: 20px;
-      padding-left: 20px;
-    }
-
-    .bloque ul li {
-      margin-bottom: 15px;
-    }
-
-    .bloque5 {
-      text-align: center;
-      font-style: italic;
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-top: 40px;
-      color: #06326E;
-      line-height: 1.5;
-    }
-
-    .imagen-superior {
-      max-width: 300px;
-      margin: 30px 20px 20px 60px;
-      float: left;
-    }
-
-    @media (max-width: 768px) {
-      .contenido {
-        padding: 20px;
-      }
-
-      .imagen-superior {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sección</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script defer src="../js/plantilla.js"></script>
 </head>
 <body>
 
-  <div class="titulo">Nuestra Firma</div>
+  <!-- Aquí se insertará dinámicamente el encabezado -->
+  <div id="encabezado"></div>
 
-  <div class="contenido">
-    <img src="IMAGENES/lara1.png" alt="Imagen Lara & Asociados" class="imagen-superior">
+  <main id="contenido">
+    <!-- Aquí colocas el contenido personalizado de cada página -->
 
-    <div class="bloque">
-      <p>
-        Lara & Asociados Consultores Legales es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
+    <section class="bloque">
+      <h2 class="titulo-seccion">Título de Ejemplo</h2>
+      <p class="texto-justificado">
+        Este es un ejemplo de texto. Aquí podrás incluir el contenido específico de esta sección.
       </p>
-      <p>
-        Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.
-      </p>
-    </div>
+    </section>
 
-    <div class="bloque">
-      <h2>¿Qué nos Distingue?</h2>
-      <ul>
-        <li>
-          <strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.
-        </li>
-        <li>
-          <strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.
-        </li>
-        <li>
-          <strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.
-        </li>
-      </ul>
-    </div>
+  </main>
 
-    <div class="bloque">
-      <h2>Su Tranquilidad es Nuestra Prioridad</h2>
-      <p>
-        Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
-      </p>
-    </div>
-
-    <div class="bloque5">
-      <p><em><strong>Protegemos sus intereses con visión preventiva y estratégica</strong></em></p>
-      <p><em><strong>Su seguridad jurídica es nuestro compromiso</strong></em></p>
-    </div>
-  </div>
+  <!-- Aquí se insertará dinámicamente el pie de página o la botonera -->
+  <div id="footer"></div>
 
 </body>
 </html>
