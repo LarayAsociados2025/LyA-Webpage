@@ -2,54 +2,54 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestra Firma</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #06326E;
     }
 
-    .contenedor {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
     .bloque {
       margin-bottom: 40px;
-      text-align: justify;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .bloque img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
+    .bloque p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .bloque h2 {
+      text-align: center;
+      font-size: 22px;
+      color: #007A82;
+      margin-bottom: 10px;
     }
 
     .bloque5 {
       text-align: center;
-      font-weight: bold;
       font-size: 18px;
-      color: #007A82;
-      margin-top: 40px;
+      font-weight: bold;
+      color: #06326E;
     }
 
     .volver {
-      display: block;
       text-align: center;
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     .volver a {
       background-color: #06326E;
       color: white;
+      padding: 12px 24px;
       text-decoration: none;
-      padding: 10px 20px;
       border-radius: 6px;
       font-size: 16px;
     }
@@ -57,65 +57,46 @@
     .volver a:hover {
       background-color: #007A82;
     }
-
-    .logo {
-      max-width: 180px;
-      display: block;
-      margin-bottom: 30px;
-    }
-
-    .superior {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 40px;
-    }
-
-    .imagen-superior {
-      max-width: 300px;
-      margin-left: 30px;
-    }
-
-    .texto-superior {
-      flex: 1;
-    }
   </style>
 </head>
 <body>
-  <div class="contenedor">
-    <!-- Encabezado con logo -->
-    <div class="superior">
-      <div class="texto-superior">
-        <img src="../imagenes/logo.png" alt="Logo Lara & Asociados" class="logo" />
-        <h1>Nuestra Firma</h1>
-      </div>
-      <!-- Aquí puedes colocar otra imagen (a subir luego) -->
-      <img src="../imagenes/nuestra-firma.jpg" alt="Nuestra Firma" class="imagen-superior" />
-    </div>
 
-    <!-- Bloques de contenido -->
-    <div class="bloque">
-      <p><strong>Experiencia, conocimiento y compromiso definen a Lara & Asociados.</strong> Nuestro equipo de abogados combina trayectoria profesional con una visión moderna del derecho, brindando asesoría jurídica estratégica, eficaz y cercana a las necesidades de nuestros clientes.</p>
-    </div>
-
-    <div class="bloque">
-      <p><strong>Actuamos con ética, responsabilidad y visión preventiva.</strong> Nuestra firma se distingue por anticipar riesgos, resolver conflictos con eficiencia y construir soluciones jurídicas sostenibles para individuos, empresas e instituciones.</p>
-    </div>
-
-    <div class="bloque">
-      <p><strong>Más que abogados, somos sus aliados legales.</strong> Construimos relaciones de confianza, enfocadas en la defensa de sus intereses y la generación de valor jurídico en cada proceso o asesoría que asumimos.</p>
-    </div>
-
-    <!-- Frases destacadas -->
-    <div class="bloque5">
-      <p>***Protegemos sus intereses con visión preventiva y estratégica***</p>
-      <p>***Su seguridad jurídica es nuestro compromiso***</p>
-    </div>
-
-    <!-- Botón volver -->
-    <div class="volver">
-      <a href="index.html">← Volver a Inicio</a>
-    </div>
+  <!-- Bloque 1 (Título) -->
+  <div class="bloque">
+    <h2>NUESTRA FIRMA</h2>
   </div>
+
+  <!-- Bloque 2 -->
+  <div class="bloque">
+    <p>
+      Lara & Asociados es una firma consultora legal con visión multidisciplinaria que brinda soluciones jurídicas estratégicas e integrales. Nuestro equipo combina experiencia, conocimiento técnico y atención personalizada para enfrentar los desafíos legales de nuestros clientes con eficacia y compromiso.
+    </p>
+  </div>
+
+  <!-- Bloque 3 -->
+  <div class="bloque">
+    <p>
+      Nuestra práctica se sustenta en valores éticos, rigurosidad profesional y una perspectiva preventiva que permite anticiparnos a los conflictos, reduciendo riesgos y generando valor para quienes confían en nosotros.
+    </p>
+  </div>
+
+  <!-- Bloque 4 -->
+  <div class="bloque">
+    <p>
+      Trabajamos junto a nuestros clientes para comprender su realidad, sus objetivos y el entorno en el que se desenvuelven, ofreciendo asesoría oportuna y soluciones prácticas adaptadas a cada necesidad.
+    </p>
+  </div>
+
+  <!-- Bloque 5 (mensajes en negrita) -->
+  <div class="bloque5">
+    <p>***Protegemos sus intereses con visión preventiva y estratégica***</p>
+    <p>***Su seguridad jurídica es nuestro compromiso***</p>
+  </div>
+
+  <!-- Botón volver -->
+  <div class="volver">
+    <a href="../index.html">Volver a Inicio</a>
+  </div>
+
 </body>
 </html>
