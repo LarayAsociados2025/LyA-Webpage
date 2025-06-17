@@ -3,76 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lara & Asociados Consultores Legales</title>
+  <title>LARA & ASOCIADOS CONSULTORES LEGALES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #06326E;
-    }
-    .container {
       text-align: center;
-      padding: 60px 20px;
     }
-    .logo {
-      max-width: 200px;
-      margin-bottom: 20px;
+
+    header img {
+      max-width: 400px;
+      margin-top: 30px;
     }
-    .titulo {
-      font-size: 36px;
-      font-weight: bold;
+
+    h1 {
+      font-size: 2.5em;
       color: #06326E;
-      margin-bottom: 10px;
+      font-family: 'Great Vibes', cursive;
+      margin-top: 20px;
     }
+
     .subtitulo {
-      font-size: 20px;
-      color: #007A82;
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      font-size: 1.2em;
+      color: #06326E;
+      margin-top: 5px;
       margin-bottom: 40px;
     }
-    .botonera {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      justify-content: center;
-      gap: 15px;
-      max-width: 500px;
-      margin: 0 auto;
-    }
+
     .boton {
+      display: block;
+      margin: 10px;
+      padding: 0;
       background-color: #06326E;
       color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
       text-decoration: none;
       font-size: 16px;
-      width: 220px;
+      font-style: italic;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      width: 380px;
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
     .boton:hover {
       background-color: #007A82;
+    }
+
+    #presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .botonera {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .columna {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frase-final {
+      font-size: 1.2em;
+      color: #06326E;
+      margin-top: 30px;
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      font-weight: normal;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Logo (desde carpeta imagenes) -->
-    <img src="imagenes/logo.png" alt="Logo Lara & Asociados" class="logo" />
-    
-    <div class="titulo">Lara & Asociados Consultores Legales</div>
-    <div class="subtitulo">Nuestra Firma a su Servicio</div>
 
-    <!-- Botonera con enlaces a html/ -->
+  <section id="presentacion">
+    <header>
+      <img src="logo.png" alt="Lara & Asociados Logo">
+    </header>
+
+    <h1>Nuestra Firma a su Servicio</h1>
+
+    <p class="subtitulo">La protección jurídica de sus negocios es nuestro compromiso...</p>
+
     <div class="botonera">
-      <a href="html/presentacion.html" class="boton">Presentación</a>
-      <a href="html/nuestra-firma.html" class="boton">Nuestra Firma</a>
-      <a href="html/mision-vision-valores.html" class="boton">Misión, Visión, Valores</a>
-      <a href="html/filosofia.html" class="boton">Filosofía</a>
-      <a href="html/servicios.html" class="boton">Servicios</a>
-      <a href="html/staff.html" class="boton">Staff</a>
-      <a href="html/estructura.html" class="boton">Estructura Organizacional</a>
-      <a href="html/clientes.html" class="boton">Clientes</a>
+      <div class="columna">
+        <a href="nuestra-firma.html" class="boton">NUESTRA FIRMA A SU SERVICIO</a>
+        <a href="mision-vision-valores.html" class="boton">NUESTRA MISIÓN, VISIÓN Y VALORES</a>
+        <a href="filosofia.html" class="boton">NUESTRA FILOSOFÍA</a>
+        <a href="servicios.html" class="boton">NUESTROS SERVICIOS ESPECIALIZADOS</a>
+      </div>
+      <div class="columna">
+        <a href="staff.html" class="boton">NUESTRO STAFF DE PROFESIONALES</a>
+        <a href="estructura-organizacional.html" class="boton">NUESTRA ORGANIZACIÓN EMPRESARIAL</a>
+        <a href="clientes.html" class="boton">NUESTROS CLIENTES</a>
+        <a href="contacto.html" class="boton">CONTÁCTESE CON NOSOTROS</a>
+      </div>
     </div>
-  </div>
+
+    <div class="frase-final">
+      ... Sus problemas y conflictos legales están en buenas manos
+    </div>
+  </section>
+
 </body>
 </html>
