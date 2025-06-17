@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestra Firma</title>
   <style>
     body {
@@ -20,7 +20,6 @@
 
     .fila {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
@@ -33,20 +32,24 @@
     }
 
     .bloque1 img {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
-    }
-
-    .bloque2 h2, .bloque3 h2, .bloque4 h2 {
-      font-size: 24px;
-      color: #06326E;
-      margin-bottom: 10px;
     }
 
     .bloque2 p, .bloque3 p, .bloque4 p {
       text-align: justify;
       line-height: 1.6;
+    }
+
+    .bloque2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .bloque3, .bloque4 {
+      width: 50%;
     }
 
     .bloque5 {
@@ -63,7 +66,7 @@
 
     a.volver {
       display: inline-block;
-      margin: 30px auto 0;
+      margin-top: 30px;
       padding: 10px 20px;
       background-color: #06326E;
       color: white;
@@ -81,37 +84,35 @@
 
   <div class="contenedor">
 
-    <!-- Fila 1: Imagen y Bloque de texto -->
+    <!-- Fila 1: Imagen y bloque 2 -->
     <div class="fila">
       <div class="bloque bloque1">
         <img src="../imagenes/lara1.png" alt="Imagen descriptiva">
       </div>
       <div class="bloque bloque2">
-        <h2>Nuestra Firma a su Servicio</h2>
-        <p>
-          LARA & ASOCIADOS CONSULTORES LEGALES es una firma de abogados orientada a ofrecer soluciones jurídicas integrales, efectivas e innovadoras.
-          Nuestra experiencia y compromiso nos permiten brindar a nuestros clientes un servicio profesional de alta calidad, adaptado a sus necesidades particulares y con enfoque estratégico.
+        <p style="text-align: justify;">
+          En <strong>Lara & Asociados Consultores Legales</strong> estamos convencidos de que un abogado no sólo debe resolver los conflictos legales, sino prevenirlos con visión estratégica. Nuestro compromiso es brindarle una asesoría jurídica integral, ética y oportuna.
         </p>
       </div>
     </div>
 
-    <!-- Fila 2: Filosofía y Valores -->
+    <!-- Fila 2: Bloques 3 y 4 -->
     <div class="fila">
       <div class="bloque bloque3">
-        <h2>Comprometidos con la Excelencia</h2>
-        <p>
-          Nuestra práctica se basa en la ética, la responsabilidad y el compromiso con nuestros clientes. Cada caso es abordado con total dedicación, rigurosidad y visión preventiva, procurando siempre la defensa efectiva de los intereses de nuestros patrocinados.
+        <p style="text-align: justify;">
+          <strong>Su Tranquilidad es Nuestra Prioridad</strong><br><br>
+          Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
         </p>
       </div>
       <div class="bloque bloque4">
-        <h2>Visión Estratégica</h2>
-        <p>
-          Entendemos el entorno legal como una herramienta clave para el desarrollo empresarial. Por eso brindamos asesoría especializada que permita a nuestros clientes prevenir riesgos, optimizar recursos y tomar decisiones seguras en un contexto jurídico cambiante.
+        <p style="text-align: justify;">
+          <strong>Abogados de Confianza</strong><br><br>
+          Conformamos un equipo multidisciplinario de profesionales comprometidos con su bienestar jurídico. Nuestro objetivo es que usted se sienta acompañado y respaldado en todo momento.
         </p>
       </div>
     </div>
 
-    <!-- Fila 3: Frases Finales -->
+    <!-- Fila 3: Bloque 5 -->
     <div class="bloque5">
       <p>***Protegemos sus intereses con visión preventiva y estratégica***</p>
       <p>***Su seguridad jurídica es nuestro compromiso***</p>
