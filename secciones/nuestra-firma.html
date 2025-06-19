@@ -41,6 +41,10 @@
     .bloque3-lista li {
       margin-bottom: 12px;
     }
+    .contenedor-bloques {
+      width: 90%;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -49,48 +53,52 @@
   <div class="titulo-principal">Nuestra Firma</div>
 
   <!-- Contenido estructurado -->
-  <table style="width: 100%; border-collapse: collapse;">
-    <tr>
-      <!-- Columna izquierda: Imagen + Bloque 3 -->
-      <td style="width: 40%; vertical-align: top; padding: 20px; text-align: center;">
-        <!-- Bloque 1: Imagen -->
-        <div style="width: 8cm; height: 5cm; background-color: #ccc; margin: 0 auto;"></div>
+  <div class="contenedor-bloques">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <!-- Columna izquierda: Imagen + Bloque 3 -->
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 20px 20px; text-align: center;">
+          <!-- Bloque 1: Imagen (alineado visualmente con el inicio del bloque 2) -->
+          <div style="margin-top: 35px; width: 8cm; height: 5cm; background-color: #ccc; margin-left: auto; margin-right: auto;"></div>
 
-        <!-- Espacio entre bloques -->
-        <div style="height: 25px;"></div>
+          <!-- Espacio entre bloques -->
+          <div style="height: 25px;"></div>
 
-        <!-- Bloque 3 -->
-        <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; text-align-last: left;">
-          <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
-          <p style="text-align: center; margin: 20px 0 15px 0;"><strong>¿Qué nos Distingue?</strong></p>
-          <ul class="bloque3-lista" style="padding-left: 20px;">
-            <li><strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
-            <li><strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
-            <li><strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
-          </ul>
-        </div>
-      </td>
+          <!-- Bloque 3 -->
+          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; text-align-last: left; max-width: 450px; margin: 0 auto;">
+            <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
+            <p style="text-align: center; margin: 20px 0 15px 0;"><strong>¿Qué nos Distingue?</strong></p>
+            <ul class="bloque3-lista" style="padding-left: 20px;">
+              <li><strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
+              <li><strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
+              <li><strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
+            </ul>
+          </div>
+        </td>
 
-      <!-- Columna derecha: Bloque 2 + Bloques 4 y 5 -->
-      <td style="width: 60%; vertical-align: top; padding: 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
-        <!-- Bloque 2 -->
-        <p style="margin-bottom: 30px;">
-          <strong>Lara & Asociados Consultores Legales</strong> es una Firma fundada en el año 2003, que fue concebida con la finalidad de cubrir el déficit de una Asesoría Legal que se caracterice, en primer lugar, en preocuparse por el bienestar y la integridad del cliente. Cuenta con una estructura corporativa sólida y una visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
-        </p>
+        <!-- Columna derecha: Bloque 2 + Bloques 4 y 5 -->
+        <td style="width: 50%; vertical-align: top; padding: 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <!-- Bloque 2 -->
+            <p style="margin-bottom: 30px;">
+              <strong>Lara & Asociados Consultores Legales</strong> es una Firma fundada en el año 2003, que fue concebida con la finalidad de cubrir el déficit de una Asesoría Legal que se caracterice, en primer lugar, en preocuparse por el bienestar y la integridad del cliente. Cuenta con una estructura corporativa sólida y una visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
+            </p>
 
-        <!-- Bloque 4 -->
-        <p style="font-weight: bold; margin: 0 0 10px 0;">Su Tranquilidad es Nuestra Prioridad</p>
-        <p style="margin: 0 0 30px 0;">
-          Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
-        </p>
+            <!-- Bloque 4 -->
+            <p style="font-weight: bold; margin: 0 0 10px 0;">Su Tranquilidad es Nuestra Prioridad</p>
+            <p style="margin: 0 0 30px 0;">
+              Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
+            </p>
 
-        <!-- Bloque 5 -->
-        <p style="font-style: italic; margin-bottom: 0;">
-          La protección jurídica de todos sus negocios, evitando contingencias legales, es nuestro compromiso… Sus problemas y conflictos legales están en buenas manos.
-        </p>
-      </td>
-    </tr>
-  </table>
+            <!-- Bloque 5 -->
+            <p style="font-style: italic; margin-bottom: 0;">
+              La protección jurídica de todos sus negocios, evitando contingencias legales, es nuestro compromiso… Sus problemas y conflictos legales están en buenas manos.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 
   <!-- Botoneras -->
   <div class="botonera">
