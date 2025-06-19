@@ -2,31 +2,109 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sección</title>
-  <link rel="stylesheet" href="../css/estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nuestra Misión, Visión y Valores - Lara & Asociados</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-  <script defer src="../js/plantilla.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #06326E;
+      text-align: left;
+      padding: 0 20px 40px 20px;
+    }
+
+    header {
+      background-color: #06326E;
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto 0 auto;
+    }
+
+    h2 {
+      color: #007A82;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    /* Botoneras */
+    .botonera {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .boton {
+      display: block;
+      background-color: #06326E;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      border-radius: 5px;
+      padding: 12px 20px;
+      white-space: nowrap;
+      width: 220px;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+      font-style: italic;
+    }
+
+    .boton:hover {
+      background-color: #007A82;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Aquí se insertará dinámicamente el encabezado -->
-  <div id="encabezado"></div>
+  <header>
+    Nuestra Misión, Visión y Valores
+  </header>
 
-  <main id="contenido">
-    <!-- Aquí colocas el contenido personalizado de cada página -->
+  <div class="content">
+    <h2>Misión</h2>
+    <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
 
-    <section class="bloque">
-      <h2 class="titulo-seccion">Título de Ejemplo</h2>
-      <p class="texto-justificado">
-        Este es un ejemplo de texto. Aquí podrás incluir el contenido específico de esta sección.
-      </p>
-    </section>
+    <h2>Visión</h2>
+    <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
 
-  </main>
+    <h2>Valores</h2>
+    <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
+  </div>
 
-  <!-- Aquí se insertará dinámicamente el pie de página o la botonera -->
-  <div id="footer"></div>
+  <div class="botonera">
+    <a href="../index.html" class="boton">Inicio</a>
+    <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
+    <a href="mision-vision-valores.html" class="boton" style="background-color:#007A82;">Nuestra Misión, Visión y Valores</a>
+    <a href="filosofia.html" class="boton">Nuestra Filosofía</a>
+    <a href="servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
+    <a href="staff.html" class="boton">Nuestro Staff de Profesionales</a>
+    <a href="estructura-organizacional.html" class="boton">Nuestra Organización Empresarial</a>
+    <a href="clientes.html" class="boton">Nuestros Clientes</a>
+    <a href="contacto.html" class="boton">Contáctese con Nosotros</a>
+  </div>
 
 </body>
 </html>
