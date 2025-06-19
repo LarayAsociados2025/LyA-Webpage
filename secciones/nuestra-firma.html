@@ -61,9 +61,9 @@
     .botonera a {
   display: inline-block;
   margin: 10px;
-  padding: 10px 20px;
-  width: 240px;
-  min-height: 35px; /* altura mínima, pero crece si el texto necesita más espacio */
+  padding: 10px 25px;
+  width: 320px;
+  height: 40px;
   background-color: #007A82;
   color: white;
   text-decoration: none;
@@ -72,9 +72,10 @@
   font-size: 14px;
   box-sizing: border-box;
   text-align: center;
-  line-height: 1.2;
-  vertical-align: middle;
-  overflow-wrap: break-word;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   transition: background-color 0.3s ease;
 }
 
