@@ -1,142 +1,105 @@
-<!-- Página: Nuestra Firma -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Firma</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Nuestra Firma - Lara & Asociados</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 0 20px;
+      background-color: #fff;
+      color: #000;
     }
-    .titulo-principal {
-      background-color: #06326E;
+    header {
+      background-color: #06326E; /* azul corporativo */
       color: white;
-      font-family: 'Great Vibes', cursive;
-      font-size: 36px;
       text-align: center;
       padding: 15px 0;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      user-select: none;
     }
-    .botonera {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .botonera a {
-      display: inline-block;
-      background-color: #007A82;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
-      min-width: 260px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-    }
-    .bloque3-lista li {
-      margin-bottom: 12px;
-    }
-    .contenedor-bloques {
-      width: 90%;
-      margin: 0 auto;
-    }
-    .bloque4-titulo {
-      text-align: center;
-      font-weight: bold;
-      margin: 0 0 10px 0;
-    }
-    .bloque5-texto {
-      text-align: center;
-      font-weight: bold;
-      color: #06326E;
-      margin-bottom: 20px;
+    .contenedor {
+      max-width: 960px;
+      margin: 30px auto;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .imagen-centro {
-      display: block;
-      margin: 30px auto 0 auto;
       width: 8cm;
       height: 5cm;
-      background-color: #ccc;
+      margin-top: 35px;
+    }
+    .imagen-centro img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .bloque-texto {
+      flex: 1 1 450px;
+      max-width: 450px;
+    }
+    .bloque-texto p {
+      text-align: justify;
+      line-height: 1.5;
+    }
+    .botoneras {
+      margin: 40px auto 60px;
+      max-width: 960px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .botonera {
+      background-color: #007A82; /* verde corporativo */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 4px;
+      text-align: center;
+      min-width: 220px;
+      box-sizing: border-box;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .botonera:hover {
+      background-color: #005f61;
     }
   </style>
 </head>
 <body>
+  <header>Nuestra Firma</header>
 
-  <!-- Título principal -->
-  <div class="titulo-principal">Nuestra Firma</div>
+  <main class="contenedor">
+    <div class="imagen-centro">
+      <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" />
+    </div>
 
-  <!-- Contenido estructurado -->
-  <div class="contenedor-bloques">
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr>
-        <!-- Columna izquierda: Imagen + Bloque 3 -->
-        <td style="width: 50%; vertical-align: top; padding: 30px 20px 20px 20px; text-align: center;">
-          <!-- Bloque 1: Imagen -->
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="margin-top: 35px; display: block; width: 8cm; height: 5cm; object-fit: contain; margin-left: auto; margin-right: auto;" />
+    <section class="bloque-texto">
+      <p>
+        Lara & Asociados Consultores Legales es una Firma fundada en el año 2003, que fue concebida con la finalidad de cubrir el déficit de una Asesoría Legal que se caracterice, en primer lugar, en preocuparse por el bienestar y la integridad del cliente. Cuenta con una estructura corporativa sólida y una visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
+      </p>
+    </section>
+  </main>
 
-          <!-- Espacio entre bloques -->
-          <div style="height: 25px;"></div>
-
-          <!-- Bloque 3 -->
-          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; max-width: 450px; margin: 0 auto;">
-            <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
-
-            <!-- Título centrado respecto a las viñetas -->
-            <div style="text-align: center; margin: 20px 0 15px 0;">
-              <strong>¿Qué nos Distingue?</strong>
-            </div>
-
-            <ul class="bloque3-lista" style="padding-left: 20px;">
-              <li><strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
-              <li><strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
-              <li><strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
-            </ul>
-          </div>
-        </td>
-
-        <!-- Columna derecha: Bloques 2, 4, 5 y nueva imagen -->
-        <td style="width: 50%; vertical-align: top; padding: 60px 20px 20px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
-          <div style="max-width: 450px; margin: 0 auto;">
-            <!-- Bloque 2 -->
-            <p style="margin-bottom: 30px;">
-              <strong>Lara & Asociados Consultores Legales</strong> es una Firma fundada en el año 2003, que fue concebida con la finalidad de cubrir el déficit de una Asesoría Legal que se caracterice, en primer lugar, en preocuparse por el bienestar y la integridad del cliente. Cuenta con una estructura corporativa sólida y una visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
-            </p>
-
-            <!-- Bloque 4 -->
-            <p class="bloque4-titulo">Su Tranquilidad es Nuestra Prioridad</p>
-            <p style="margin: 0 0 30px 0;">
-              Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
-            </p>
-
-            <!-- Bloque 5 -->
-            <p class="bloque5-texto">
-              La protección jurídica de todos sus negocios, evitando contingencias legales, es nuestro compromiso… Sus problemas y conflictos legales están en buenas manos.
-            </p>
-
-            <!-- Imagen debajo del Bloque 5 -->
-            <div class="imagen-centro"></div>
-          </div>
-        </td>
-      </tr>
-    </table>
+  <div class="botoneras">
+    <a href="index.html" class="botonera">Inicio</a>
+    <a href="nuestra-mision-vision-valores.html" class="botonera">Nuestra Misión, Visión y Valores</a>
+    <a href="nuestra-filosofia.html" class="botonera">Nuestra Filosofía</a>
+    <a href="nuestro-portafolio-servicios.html" class="botonera">Nuestro Portafolio de Servicios</a>
+    <a href="nuestro-staff.html" class="botonera">Nuestra Staff de Profesionales</a>
+    <a href="nuestra-estructura-organizacional.html" class="botonera">Nuestra Estructura Organizacional</a>
+    <a href="nuestros-clientes.html" class="botonera">Nuestros Clientes</a>
+    <a href="contactenos.html" class="botonera">Contáctenos</a>
   </div>
-
-  <!-- Botoneras -->
-  <div class="botonera">
-    <a href="index.html">Inicio</a>
-    <a href="mision-vision-valores.html">Nuestra Misión, Visión y Valores</a>
-    <a href="filosofia.html">Nuestra Filosofía</a>
-    <a href="portafolio-servicios.html">Nuestro Portafolio de Servicios</a>
-    <a href="staff.html">Nuestra Staff de Profesionales</a>
-    <a href="estructura-organizacional.html">Nuestra Estructura Organizacional</a>
-    <a href="clientes.html">Nuestros Clientes</a>
-    <a href="contacto.html">Contáctenos</a>
-  </div>
-
 </body>
 </html>
