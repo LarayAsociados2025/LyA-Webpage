@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Nuestra Firma</title>
-  <link rel="stylesheet" href="../css/estilos.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 40px;
+      color: #06326E;
+    }
+
+    .contenedor-bloque1 {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .recuadro-imagen {
+      width: 6cm;
+      height: 5cm;
+      background-color: #e0e0e0;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #555;
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #06326E;
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="franja-azul">
-    <h1>Nuestra Firma</h1>
-  </header>
-
-  <main>
-    <section class="bloque-texto">
-      <p>
-        Lara & Asociados Consultores Legales es una Firma jurídica con estructura corporativa sólida y visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica. Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.
-      </p>
-    </section>
-  </main>
+  <div class="contenedor-bloque1">
+    <div class="recuadro-imagen">
+      Imagen Institucional<br>6 cm × 5 cm
+    </div>
+    <div>
+      <h1>Nuestra Firma</h1>
+    </div>
+  </div>
 
 </body>
 </html>
