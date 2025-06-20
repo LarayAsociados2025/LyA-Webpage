@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestra Misión, Visión y Valores</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
@@ -10,13 +10,12 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
-      color: #06326E;
-      text-align: center;
+      color: #000000;
     }
 
-    .titulo-franja {
+    h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
+      font-size: 2.5em;
       color: white;
       background-color: #06326E;
       margin: 0;
@@ -24,113 +23,130 @@
       text-align: center;
     }
 
-    .bloque {
-      margin-top: 30px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+    .contenido {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+    }
+
+    .texto {
+      flex: 1;
+      max-width: 60%;
       text-align: justify;
-      color: #06326E;
-      font-size: 1.1em;
-      line-height: 1.6em;
+    }
+
+    .bloque {
+      margin-bottom: 30px;
     }
 
     .bloque h2 {
-      text-align: center;
-      font-family: 'Great Vibes', cursive;
-      font-size: 2em;
+      font-family: Arial, sans-serif;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #000;
       margin-bottom: 10px;
     }
 
-    .valores {
-      text-align: center;
-      margin-top: 20px;
-      font-style: normal;
+    .bloque p {
+      line-height: 1.6em;
+      color: #000;
     }
 
     .espacio-imagen {
-      width: 8cm;
-      height: 5cm;
-      border: 2px dashed #007A82;
-      margin: 40px auto 20px auto;
-      color: #007A82;
-      font-style: italic;
+      flex: 1;
+      max-width: 35%;
+      background-color: #f0f0f0;
+      height: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.9em;
+      color: #999;
     }
 
-    /* Botonera */
     .botonera {
-      margin-top: 50px;
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 50px;
       flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 40px;
     }
 
-    .botonera .columna {
+    .columna {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      align-items: center;
     }
 
-    .boton {
-      display: inline-block;
-      background-color: #06326E;
+    .botonera a {
+      display: block;
+      margin: 10px;
+      padding: 0;
+      background-color: #007A82;
       color: white;
       text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 6px;
+      font-size: 16px;
+      font-style: italic;
       font-family: Arial, sans-serif;
-      font-size: 1em;
+      text-align: center;
+      border-radius: 5px;
       transition: background-color 0.3s ease;
+      width: 380px;
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .boton:hover {
-      background-color: #007A82;
+    .botonera a:hover {
+      background-color: #06326E;
     }
   </style>
 </head>
 <body>
+  <h1>Nuestra Misión, Visión y Valores</h1>
 
-  <h1 class="titulo-franja">Nuestra Misión, Visión y Valores</h1>
+  <div class="contenido">
+    <div class="texto">
+      <div class="bloque">
+        <h2>Misión</h2>
+        <p><strong>Misión:</strong> Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
+      </div>
+      <div class="bloque">
+        <h2>Visión</h2>
+        <p><strong>Visión:</strong> Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
+      </div>
+      <div class="bloque">
+        <h2>Valores</h2>
+        <p><strong>Valores:</strong> Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
+      </div>
+    </div>
 
-  <div class="bloque">
-    <h2>Misión</h2>
-    <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
-  </div>
-
-  <div class="bloque">
-    <h2>Visión</h2>
-    <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
-  </div>
-
-  <div class="bloque valores">
-    <h2>Valores</h2>
-    <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
-  </div>
-
-  <div class="espacio-imagen">
-    Espacio reservado para imagen (8 cm x 5 cm)
+    <div class="espacio-imagen">
+      Espacio reservado para imagen (8 cm x 5 cm)
+    </div>
   </div>
 
   <!-- Botoneras -->
   <div class="botonera">
     <div class="columna">
-      <a href="../index.html" class="boton">Inicio</a>
-      <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
-      <a href="nuestra-mision.html" class="boton">Nuestra Misión, Visión y Valores</a>
-      <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
-      <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
+      <a href="../index.html">Inicio</a>
+      <a href="nuestra-firma.html">Nuestra Firma</a>
+      <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
+      <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
+      <a href="nuestros-servicios.html">Nuestro Portafolio de Servicios</a>
     </div>
     <div class="columna">
-      <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
-      <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
-      <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
-      <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
+      <a href="nuestro-staff.html">Nuestro Staff de Profesionales</a>
+      <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
+      <a href="nuestros-clientes.html">Nuestros Clientes</a>
+      <a href="nuestro-contacto.html">Contáctenos</a>
     </div>
   </div>
 
