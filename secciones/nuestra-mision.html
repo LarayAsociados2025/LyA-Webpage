@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestra Misión, Visión y Valores</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
@@ -10,12 +10,21 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
-      color: black;
+      color: #000000;
+      text-align: center;
     }
 
+    /* Contenedor principal */
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Título principal con Great Vibes sobre la franja azul */
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 2.5em;
+      font-size: 2.2em; /* Igual que el de "Nuestra Firma" */
       color: white;
       background-color: #06326E;
       margin: 0;
@@ -27,52 +36,44 @@
     .contenido {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: flex-start;
       gap: 40px;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin-top: 30px;
     }
 
-    .texto {
+    .textos {
       flex: 1;
-      max-width: 450px;
-    }
-
-    .texto h2 {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #06326E;
-    }
-
-    .texto p {
       text-align: justify;
-      font-size: 1em;
-      line-height: 1.6;
+      font-size: 1em; /* Uniforme con la sección Nuestra Firma */
+    }
+
+    .textos h2 {
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 1.2em;
+      text-align: center;
     }
 
     .espacio-imagen {
-      flex: 1;
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 2px dashed #ccc;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px dashed #06326E;
-      width: 100%;
-      height: 200px;
       font-size: 0.9em;
-      color: #06326E;
+      margin-top: 35px; /* Alineado con el contenido textual */
     }
 
+    /* Botonera al final */
     .botonera {
-      margin: 50px auto 30px;
+      margin-top: 50px;
       display: flex;
       justify-content: center;
       gap: 50px;
       flex-wrap: wrap;
-      max-width: 800px;
     }
 
     .columna {
@@ -82,29 +83,29 @@
     }
 
     .botonera a {
-      display: block;
-      background-color: #007A82;
+      display: inline-block;
+      background-color: #007A82; /* Verde por defecto */
       color: white;
       text-decoration: none;
       padding: 12px 25px;
       border-radius: 6px;
       font-family: Arial, sans-serif;
       font-size: 1em;
-      text-align: center;
       transition: background-color 0.3s ease;
+      white-space: nowrap;
+      text-align: center;
     }
 
     .botonera a:hover {
-      background-color: #06326E;
+      background-color: #06326E; /* Azul al pasar el mouse */
     }
   </style>
 </head>
 <body>
-
   <h1>Nuestra Misión, Visión y Valores</h1>
 
-  <div class="contenido">
-    <div class="texto">
+  <section class="contenido">
+    <div class="textos">
       <h2>Misión</h2>
       <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
 
@@ -118,22 +119,22 @@
     <div class="espacio-imagen">
       Espacio reservado para imagen (8 cm x 5 cm)
     </div>
-  </div>
+  </section>
 
   <!-- Botoneras -->
   <div class="botonera">
     <div class="columna">
-      <a href="../index.html">Inicio</a>
-      <a href="nuestra-firma.html">Nuestra Firma</a>
-      <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
-      <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
-      <a href="nuestros-servicios.html">Nuestro Portafolio de Servicios</a>
+      <a href="../index.html" class="boton">Inicio</a>
+      <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
+      <a href="nuestra-mision.html" class="boton">Nuestra Misión, Visión y Valores</a>
+      <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
+      <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
     </div>
     <div class="columna">
-      <a href="nuestro-staff.html">Nuestro Staff de Profesionales</a>
-      <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
-      <a href="nuestros-clientes.html">Nuestros Clientes</a>
-      <a href="nuestro-contacto.html">Contáctenos</a>
+      <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
+      <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
+      <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
+      <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
     </div>
   </div>
 
