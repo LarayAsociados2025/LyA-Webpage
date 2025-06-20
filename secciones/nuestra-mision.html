@@ -2,108 +2,123 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nuestra Misión, Visión y Valores - Lara & Asociados</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuestra Misión, Visión y Valores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #06326E;
-      text-align: left;
-      padding: 0 20px 40px 20px;
     }
 
-    header {
+    .titulo-franja {
       background-color: #06326E;
-      padding: 15px 0;
-      text-align: center;
       color: white;
+      text-align: center;
+      padding: 30px 20px 20px;
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
-      letter-spacing: 1px;
-      user-select: none;
+      font-size: 2.8em;
     }
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto 0 auto;
+    .contenido {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
-    h2 {
+    .bloque {
+      margin-bottom: 40px;
+    }
+
+    .bloque h2 {
       color: #007A82;
-      margin-top: 30px;
+      font-size: 1.6em;
       margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 1.8em;
     }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.5em;
-      margin-bottom: 20px;
+    .bloque p {
       text-align: justify;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
-    /* Botoneras */
+    .espacio-imagen {
+      width: 8cm;
+      height: 5cm;
+      border: 2px dashed #ccc;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #999;
+    }
+
     .botonera {
       display: flex;
       justify-content: center;
-      gap: 50px;
       flex-wrap: wrap;
-      margin-top: 40px;
+      gap: 15px;
+      margin: 60px 20px 40px;
     }
 
-    .boton {
-      display: block;
+    .botonera a {
       background-color: #06326E;
       color: white;
       text-decoration: none;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      padding: 14px 22px;
+      font-size: 15px;
       border-radius: 5px;
-      padding: 12px 20px;
-      white-space: nowrap;
-      width: 220px;
-      box-sizing: border-box;
+      font-family: Arial, sans-serif;
       transition: background-color 0.3s ease;
-      font-style: italic;
+      min-width: 280px;
+      text-align: center;
     }
 
-    .boton:hover {
+    .botonera a:hover {
       background-color: #007A82;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    Nuestra Misión, Visión y Valores
-  </header>
+  <div class="titulo-franja">Nuestra Misión, Visión y Valores</div>
 
-  <div class="content">
-    <h2>Misión</h2>
-    <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
+  <div class="contenido">
 
-    <h2>Visión</h2>
-    <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
+    <div class="bloque">
+      <h2>Misión</h2>
+      <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
+    </div>
 
-    <h2>Valores</h2>
-    <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
-  </div>
+    <div class="bloque">
+      <h2>Visión</h2>
+      <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
+    </div>
 
-  <div class="botonera">
-    <a href="../index.html" class="boton">Inicio</a>
-    <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
-    <a href="mision-vision-valores.html" class="boton" style="background-color:#007A82;">Nuestra Misión, Visión y Valores</a>
-    <a href="filosofia.html" class="boton">Nuestra Filosofía</a>
-    <a href="servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
-    <a href="staff.html" class="boton">Nuestro Staff de Profesionales</a>
-    <a href="estructura-organizacional.html" class="boton">Nuestra Organización Empresarial</a>
-    <a href="clientes.html" class="boton">Nuestros Clientes</a>
-    <a href="contacto.html" class="boton">Contáctese con Nosotros</a>
+    <div class="bloque">
+      <h2>Valores</h2>
+      <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
+    </div>
+
+    <div class="espacio-imagen">
+      Espacio reservado para imagen (8 cm x 5 cm)
+    </div>
+
+    <div class="botonera">
+      <a href="../index.html">Inicio</a>
+      <a href="nuestra-firma.html">Nuestra Firma</a>
+      <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
+      <a href="nuestros-servicios.html">Nuestro Portafolio de Servicios</a>
+      <a href="nuestro-staff.html">Nuestro Staff de Profesionales</a>
+      <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
+      <a href="nuestros-clientes.html">Nuestros Clientes</a>
+      <a href="nuestro-contacto.html">Contáctenos</a>
+    </div>
+
   </div>
 
 </body>
