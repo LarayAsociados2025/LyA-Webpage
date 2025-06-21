@@ -1,140 +1,141 @@
+<!-- Página: Nuestra Firma -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuestra Misión, Visión y Valores</title>
+  <title>Nuestra Firma</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-
-    /* Contenedor principal */
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    /* Título principal con Great Vibes sobre la franja azul */
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.2em; /* Igual que el de "Nuestra Firma" */
-      color: white;
+    .titulo-principal {
       background-color: #06326E;
-      margin: 0;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      text-align: center;
       padding: 15px 0;
-      text-align: center;
-      font-weight: normal;
     }
-
-    .contenido {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-      margin-top: 30px;
-    }
-
-    .textos {
-      flex: 1;
-      text-align: justify;
-      font-size: 1em; /* Uniforme con la sección Nuestra Firma */
-    }
-
-    .textos h2 {
-      color: #000000;
-      font-family: Arial, sans-serif;
-      font-size: 1.2em;
-      text-align: center;
-    }
-
-    .espacio-imagen {
-      width: 300px;
-      height: 200px;
-      background-color: #f0f0f0;
-      border: 2px dashed #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9em;
-      margin-top: 35px; /* Alineado con el contenido textual */
-    }
-
-    /* Botonera al final */
     .botonera {
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      flex-wrap: wrap;
+      text-align: center;
+      margin-top: 40px;
     }
-
-    .columna {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
     .botonera a {
       display: inline-block;
-      background-color: #007A82; /* Verde por defecto */
+      background-color: #007A82;
       color: white;
       text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 6px;
-      font-family: Arial, sans-serif;
-      font-size: 1em;
-      transition: background-color 0.3s ease;
-      white-space: nowrap;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      min-width: 260px;
+      height: 35px;
+      line-height: 35px;
       text-align: center;
     }
-
-    .botonera a:hover {
-      background-color: #06326E; /* Azul al pasar el mouse */
+    .bloque3-lista li {
+      margin-bottom: 12px;
+    }
+    .contenedor-bloques {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .bloque4-titulo {
+      text-align: center;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+    .bloque5-texto {
+      text-align: center;
+      font-weight: bold;
+      color: #06326E;
+      margin-bottom: 20px;
+    }
+    .imagen-centro {
+      display: block;
+      margin: 30px auto 0 auto;
+      width: 8cm;
+      height: 5cm;
+      background-color: #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>Nuestra Misión, Visión y Valores</h1>
 
-  <section class="contenido">
-    <div class="textos">
-      <h2>Misión</h2>
-      <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
+  <!-- Título principal -->
+  <div class="titulo-principal">Nuestra Firma</div>
 
-      <h2>Visión</h2>
-      <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
+  <!-- Contenido estructurado -->
+  <div class="contenedor-bloques">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <!-- Columna izquierda: Imagen + Bloque 3 -->
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 20px 20px; text-align: center;">
+          <!-- Bloque 1: Imagen -->
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="margin-top: 35px; display: block; width: 8cm; height: 5cm; object-fit: contain; margin-left: auto; margin-right: auto;" />
 
-      <h2>Valores</h2>
-      <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
-    </div>
+          <!-- Espacio entre bloques -->
+          <div style="height: 25px;"></div>
 
-    <div class="espacio-imagen">
-      Espacio reservado para imagen (8 cm x 5 cm)
-    </div>
-  </section>
+          <!-- Bloque 3 -->
+          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; max-width: 450px; margin: 0 auto;">
+            <p>Trabajamos con el propósito de ofrecer una asesoría legal de alta calidad, centrada en el bienestar y la confianza de nuestros clientes.</p>
+
+            <!-- Título centrado respecto a las viñetas -->
+            <div style="text-align: center; margin: 20px 0 15px 0;">
+              <strong>¿Qué nos Distingue?</strong>
+            </div>
+
+            <ul class="bloque3-lista" style="padding-left: 20px;">
+              <li><strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
+              <li><strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
+              <li><strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
+            </ul>
+          </div>
+        </td>
+
+        <!-- Columna derecha: Bloques 2, 4, 5 y nueva imagen -->
+        <td style="width: 50%; vertical-align: top; padding: 60px 20px 20px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <!-- Bloque 2 -->
+            <p style="margin-bottom: 30px;">
+              <strong>Lara & Asociados Consultores Legales</strong> es una Firma fundada en el año 2003, que fue concebida con la finalidad de cubrir el déficit de una Asesoría Legal que se caracterice, en primer lugar, en preocuparse por el bienestar y la integridad del cliente. Cuenta con una estructura corporativa sólida y una visión empresarial innovadora, que integra profesionales de distintas disciplinas bajo un mismo estándar: el compromiso ético y la excelencia técnica.
+            </p>
+
+            <!-- Bloque 4 -->
+            <p class="bloque4-titulo">Su Tranquilidad es Nuestra Prioridad</p>
+            <p style="margin: 0 0 30px 0;">
+              Cada caso es único y merece una solución a la medida. En Lara & Asociados analizamos su situación con rigor profesional y le ofrecemos alternativas claras, eficaces y sostenibles.
+            </p>
+
+            <!-- Bloque 5 -->
+            <p class="bloque5-texto">
+              La protección jurídica de todos sus negocios, evitando contingencias legales, es nuestro compromiso… Sus problemas y conflictos legales están en buenas manos.
+            </p>
+
+            <!-- Imagen debajo del Bloque 5 -->
+            <div class="imagen-centro"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 
  <!-- Botoneras -->
 <div class="botonera">
-  <div class="columna">
-    <a href="../index.html" class="boton">Inicio</a>
-    <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
-    <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
-    <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
-  </div>
-  <div class="columna">
-    <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
-    <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
-    <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
-    <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
-  </div>
+  <a href="../index.html">Inicio</a>
+  <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
+  <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
+  <a href="nuestros-servicios.html">Nuestro Portafolio de Servicios</a>
+  <a href="nuestro-staff.html">Nuestra Staff de Profesionales</a>
+  <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
+  <a href="nuestros-clientes.html">Nuestros Clientes</a>
+  <a href="nuestro-contacto.html">Contáctenos</a>
 </div>
 
 </body>
