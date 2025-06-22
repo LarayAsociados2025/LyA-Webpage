@@ -38,6 +38,9 @@
       line-height: 35px;
       text-align: center;
     }
+    .bloque3-lista li {
+      margin-bottom: 18px;
+    }
     .contenedor-bloques {
       width: 90%;
       margin: 0 auto;
@@ -51,45 +54,44 @@
 
   <!-- Contenido estructurado -->
   <div class="contenedor-bloques">
-    <!-- Primer bloque: Texto + Imagen -->
     <table style="width: 100%; border-collapse: collapse;">
+
+      <!-- Bloque 1: Introductorio -->
       <tr>
-        <!-- Texto alineado verticalmente con la imagen -->
-        <td style="width: 50%; vertical-align: middle; padding: 30px 20px; text-align: center;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; max-width: 450px; margin: 0 auto;">
-            <p>
-              En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
-            </p>
+        <!-- Texto a la izquierda -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <p>En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.</p>
           </div>
         </td>
-        <!-- Imagen -->
-        <td style="width: 50%; vertical-align: middle; padding: 30px 20px; text-align: center;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="display: block; width: 8cm; height: 5cm; object-fit: contain; margin-left: auto; margin-right: auto;" />
+
+        <!-- Imagen a la derecha -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; text-align: center;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="width: 8cm; height: 5cm; object-fit: contain;" />
+          </div>
         </td>
       </tr>
-    </table>
 
-    <!-- Texto centrado -->
-    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 15px; color: black; font-weight: bold; margin: 30px auto 0 auto; max-width: 800px;">
-      En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento. Soluciones legales que generan confianza y resultados.
-    </div>
-
-    <!-- Segundo bloque: Imagen (izquierda) + Área Judicial (derecha) -->
-    <table style="width: 100%; border-collapse: collapse; margin-top: 40px;">
+      <!-- Texto destacado centrado -->
       <tr>
-        <!-- Espacio para imagen -->
-        <td style="width: 50%; vertical-align: top; padding: 30px 20px; text-align: center;">
-          <div style="width: 8cm; height: 5cm; border: 1px dashed #ccc; margin: 0 auto;">
-            <!-- Imagen futura -->
-          </div>
+        <td colspan="2" style="text-align: center; padding-top: 20px; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold;">
+          En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento. Soluciones legales que generan confianza y resultados.
         </td>
-        <!-- Texto de área judicial -->
-        <td style="width: 50%; vertical-align: top; padding: 30px 20px; text-align: justify;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; margin: 0 auto;">
-            <strong>Área Judicial:</strong> Resolución estratégica de conflictos, tanto por vías alternativas de solución de conflictos como por vía judicial.
-            <br /><br />
-            <strong>Especialidades:</strong>
-            <ul style="padding-left: 20px; margin-top: 5px;">
+      </tr>
+
+      <!-- Bloque 2: Área Judicial (imagen izquierda, texto derecha) -->
+      <tr>
+        <!-- Imagen -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; text-align: center;">
+          <img src="AQUI_LA_URL_DE_LA_IMAGEN_JUDICIAL" alt="Imagen Área Judicial" style="width: 8cm; height: 5cm; object-fit: contain;" />
+        </td>
+        <!-- Texto -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <p><strong>Área Judicial:</strong> Resolución estratégica de conflictos, tanto por vías alternativas de solución de conflictos como por vía judicial.</p>
+            <p><strong>Especialidades:</strong></p>
+            <ul style="padding-left: 20px;">
               <li>Derecho Civil</li>
               <li>Derecho Penal</li>
               <li>Derecho Laboral</li>
@@ -101,36 +103,39 @@
           </div>
         </td>
       </tr>
+
+      <!-- Bloque 3: Área Laboral (texto izquierda, imagen derecha) -->
+      <tr>
+        <!-- Texto -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <p><strong>Área Laboral:</strong> Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.</p>
+            <p><strong>Servicios clave:</strong></p>
+            <ul style="padding-left: 20px;">
+              <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
+              <li>Elaboración de políticas de contratación</li>
+              <li>Elaboración de todo tipo de contratos de trabajo</li>
+              <li>Asesoría en terminación de relaciones laborales</li>
+            </ul>
+          </div>
+        </td>
+
+        <!-- Imagen -->
+        <td style="width: 50%; vertical-align: middle; padding: 40px 20px; text-align: center;">
+          <div style="max-width: 450px; margin: 0 auto;">
+            <img src="AQUI_LA_URL_DE_LA_IMAGEN_LABORAL" alt="Imagen Área Laboral" style="width: 8cm; height: 5cm; object-fit: contain;" />
+          </div>
+        </td>
+      </tr>
+
     </table>
   </div>
-<!-- Bloque: Área Laboral -->
-<tr>
-  <!-- Columna izquierda: Texto -->
-  <td style="width: 50%; vertical-align: middle; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 15px; text-align: justify;">
-    <div style="max-width: 450px; margin: 0 auto;">
-      <p><strong>Área Laboral:</strong> Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.</p>
-      <p><strong>Servicios clave:</strong></p>
-      <ul style="padding-left: 20px;">
-        <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
-        <li>Elaboración de políticas de contratación</li>
-        <li>Elaboración de todo tipo de contratos de trabajo</li>
-        <li>Asesoría en terminación de relaciones laborales</li>
-      </ul>
-    </div>
-  </td>
 
-  <!-- Columna derecha: Imagen -->
-  <td style="width: 50%; vertical-align: middle; padding: 40px 20px; text-align: center;">
-    <div style="max-width: 450px; margin: 0 auto;">
-      <img src="AQUI_LA_URL_DE_LA_IMAGEN_LABORAL" alt="Imagen Área Laboral" style="width: 8cm; height: 5cm; object-fit: contain;" />
-    </div>
-  </td>
-</tr>
-  <!-- Botonera -->
+  <!-- Botonera corregida -->
   <div class="botonera">
     <a href="../index.html">Inicio</a>
     <a href="nuestra-firma.html">Nuestra Firma</a>
-    <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
+    <a href="nuestra-misión.html">Nuestra Misión, Visión y Valores</a>
     <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
     <a href="nuestro-staff.html">Nuestra Staff de Profesionales</a>
     <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
