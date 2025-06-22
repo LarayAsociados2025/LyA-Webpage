@@ -2,87 +2,141 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestra Misión, Visión y Valores</title>
-  <link rel="stylesheet" href="../estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+    }
+
+    /* Contenedor principal */
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Título principal con Great Vibes sobre la franja azul */
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em; /* Igual que el de "Nuestra Firma" */
+      color: white;
+      background-color: #06326E;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .contenido {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .textos {
+      flex: 1;
+      text-align: justify;
+      font-size: 1em; /* Uniforme con la sección Nuestra Firma */
+    }
+
+    .textos h2 {
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .espacio-imagen {
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      margin-top: 35px; /* Alineado con el contenido textual */
+    }
+
+    /* Botonera al final */
+    .botonera {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .columna {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .botonera a {
+      display: inline-block;
+      background-color: #007A82; /* Verde por defecto */
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .botonera a:hover {
+      background-color: #06326E; /* Azul al pasar el mouse */
+    }
+  </style>
 </head>
-<body data-page="nuestra-misión">
-  <header class="header-seccion">
-    <h1 class="titulo-seccion">Nuestra Misión, Visión y Valores</h1>
-  </header>
+<body>
+  <h1>Nuestra Misión, Visión y Valores</h1>
 
-  <main class="contenido-seccion">
+  <section class="contenido">
+    <div class="textos">
+      <h2>Misión</h2>
+      <p>Brindar un servicio oportuno y especializado de asesoría legal e integral a personas naturales o jurídicas, nacionales o extranjeras, garantizando la seguridad jurídica de todos sus negocios e inversiones, evitando o reduciendo las posibles contingencias legales y resolviendo las existentes.</p>
 
-    <!-- Bloque 1 -->
-    <section class="bloque bloque-1">
-      <div class="bloque-imagen">
-        <img src="../imagenes/bloque1.jpg" alt="Imagen bloque 1" />
-      </div>
-      <div class="bloque-texto">
-        <p>
-          La misión, la visión y los valores de una empresa son los elementos que la identifican.
-          Los valores indican los propósitos que definen la misión y la visión; y, éstas, explican
-          por qué y para qué existe la empresa.
-        </p>
-        <p>
-          Dicho de otra manera: La misión, visión y valores son conceptos que definen la estrategia
-          de la actividad de una compañía y que permiten crear su identidad o imagen de marca.
-        </p>
-      </div>
-    </section>
+      <h2>Visión</h2>
+      <p>Ser la Firma Líder en Asesoría Legal e Integral en el Ecuador, creando las herramientas que permitan brindar soluciones oportunas a nuestros clientes.</p>
 
-    <!-- Bloque 2 -->
-    <section class="bloque bloque-2">
-      <div class="bloque-texto">
-        <ul>
-          <li><strong>¿Qué nos Distingue?</strong></li>
-          <li><strong>Enfoque integral:</strong> Combinamos nuestra experiencia legal con asesoría en áreas empresariales, administrativas, financieras y contables. Todo lo que su negocio o proyecto necesita, en un solo lugar.</li>
-          <li><strong>Equipo multidisciplinario:</strong> Nuestro talento humano está conformado por especialistas en diversas disciplinas y áreas, que trabajan de forma coordinada, asegurando soluciones integrales y estratégicas.</li>
-          <li><strong>Portafolio especializado:</strong> Organizamos nuestros servicios por áreas de especialización, garantizando una atención personalizada y el asesoramiento puntual según la necesidad de cada cliente.</li>
-        </ul>
-      </div>
-      <div class="bloque-imagen">
-        <img src="../imagenes/bloque2.jpg" alt="Imagen bloque 2" />
-      </div>
-    </section>
-
-    <!-- Bloque 3 -->
-    <section class="bloque bloque-3">
-      <div class="bloque-imagen">
-        <img src="../imagenes/bloque3.jpg" alt="Imagen bloque 3" />
-      </div>
-      <div class="bloque-texto">
-        <h2>Nuestros Principios</h2>
-        <p>
-          Actuamos con integridad, compromiso y responsabilidad social. Nos enfocamos en brindar soluciones jurídicas sostenibles que generen confianza en cada paso del proceso.
-        </p>
-      </div>
-    </section>
-
-    <!-- Bloque 4 -->
-    <section class="bloque bloque-4">
-      <div class="bloque-texto">
-        <h2>Compromiso Ético</h2>
-        <p>
-          Nuestros valores no son solo declaraciones; son prácticas diarias que se reflejan en nuestra atención al cliente, la transparencia en cada gestión y el respeto por el marco legal.
-        </p>
-      </div>
-      <div class="bloque-imagen">
-        <img src="../imagenes/bloque4.jpg" alt="Imagen bloque 4" />
-      </div>
-    </section>
-
-    <!-- Bloque 5 -->
-    <section class="bloque-cierre">
-      <p><strong>Protegemos sus intereses con visión preventiva y estratégica</strong></p>
-      <p><strong>Su seguridad jurídica es nuestro compromiso</strong></p>
-    </section>
-
-    <!-- Botón de regreso -->
-    <div class="boton-volver">
-      <a href="../index.html">Volver a la Página Principal</a>
+      <h2>Valores</h2>
+      <p>Profesionalismo, capacidad, experiencia, responsabilidad, confiabilidad, eficacia, puntualidad, dedicación, perseverancia, compromiso, honestidad.</p>
     </div>
 
-  </main>
+    <div class="espacio-imagen">
+      Espacio reservado para imagen (8 cm x 5 cm)
+    </div>
+  </section>
+
+  <!-- Botoneras -->
+  <div class="botonera">
+    <div class="columna">
+      <a href="../index.html" class="boton">Inicio</a>
+      <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
+      <a href="nuestra-mision.html" class="boton">Nuestra Misión, Visión y Valores</a>
+      <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
+      <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
+    </div>
+    <div class="columna">
+      <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
+      <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
+      <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
+      <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
+    </div>
+  </div>
+
 </body>
 </html>
