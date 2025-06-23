@@ -40,6 +40,8 @@
     }
     .bloque3-lista li {
       margin-bottom: 18px;
+      padding-left: 0;
+      list-style-position: inside;
     }
     .contenedor-bloques {
       width: 90%;
@@ -49,7 +51,25 @@
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
-      color: black;
+      color: #06326E; /* Azul corporativo */
+    }
+    /* Contenedor flex para centrar verticalmente */
+    .flex-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .texto-justificado {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      max-width: 450px;
+      text-align: justify;
+    }
+    /* Para alinear la lista (viñetas) a la izquierda dentro del texto */
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -63,14 +83,14 @@
     <table style="width: 100%; border-collapse: collapse;">
       <!-- Bloque 1 -->
       <tr>
-        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; max-width: 450px;">
+        <td style="width: 50%; vertical-align: middle; padding: 30px 20px 0px 20px;">
+          <div class="texto-justificado">
             <p>
               En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
             </p>
           </div>
         </td>
-        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px; text-align: center;">
+        <td style="width: 50%; vertical-align: middle; padding: 30px 20px 0px 20px; text-align: center;">
           <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="width: 8cm; height: 5cm; object-fit: contain;" />
         </td>
       </tr>
@@ -90,12 +110,12 @@
           <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png" alt="Imagen Área Judicial" style="width: 8cm; height: 5cm; object-fit: contain;" />
         </td>
         <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+          <div class="texto-justificado">
             <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Judicial</div>
             <p>
               Representación y patrocinio en procesos judiciales, ejercido por profesionales especializados en las siguientes áreas:
             </p>
-            <ul>
+            <ul class="bloque3-lista">
               <li>Derecho Civil</li>
               <li>Derecho Penal</li>
               <li>Derecho Laboral</li>
@@ -111,12 +131,12 @@
       <!-- Bloque 3: Área Laboral -->
       <tr>
         <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+          <div class="texto-justificado">
             <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Laboral</div>
             <p>
               Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.
             </p>
-            <ul>
+            <ul class="bloque3-lista">
               <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
               <li>Elaboración de políticas de contratación</li>
               <li>Elaboración de todo tipo de contratos de trabajo</li>
@@ -135,12 +155,12 @@
           <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png" alt="Imagen Área Societaria" style="width: 8cm; height: 5cm; object-fit: contain;" />
         </td>
         <td style="width: 50%; vertical-align: top; padding: 30px 20px 40px 20px;">
-          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+          <div class="texto-justificado">
             <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Societaria y Mercantil</div>
             <p>
               Ponemos a su disposición la asesoría societaria completa para estructurar, crear, transformar y proteger jurídicamente su empresa; y, además, una amplia gama de servicios en temas mercantiles, que le brindarán la seguridad de prevenir conflictos internos y externos o solucionar los conflictos existentes, además de proteger sus relaciones jurídicas con entidades públicas o privadas en procesos relacionados con inversiones.
             </p>
-            <ul>
+            <ul class="bloque3-lista">
               <li>Constitución y domiciliación de compañías</li>
               <li>Fusión y escisión de compañías</li>
               <li>Disolución y liquidación de compañías</li>
