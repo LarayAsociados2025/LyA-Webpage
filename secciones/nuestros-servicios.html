@@ -38,42 +38,18 @@
       line-height: 35px;
       text-align: center;
     }
-    .bloque {
+    .bloque3-lista li {
+      margin-bottom: 18px;
+    }
+    .contenedor-bloques {
       width: 90%;
-      margin: 0 auto 40px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .bloque img {
-      width: 8cm;
-      height: 5cm;
-      object-fit: contain;
-    }
-    .bloque-texto {
-      max-width: 450px;
-      font-size: 15px;
-      padding: 20px;
-      text-align: justify;
-    }
-    .bloque-titulo {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-    .bloque ul {
-      padding-left: 20px;
-      margin: 0;
-    }
-    .bloque ul li {
-      margin-bottom: 8px;
+      margin: 0 auto;
     }
     .texto-centrado {
       text-align: center;
       font-weight: bold;
-      margin-bottom: 40px;
-      margin-top: -20px;
+      margin-top: 30px;
+      color: black;
     }
   </style>
 </head>
@@ -82,7 +58,104 @@
   <!-- Título principal -->
   <div class="titulo-principal">Nuestro Portafolio de Servicios</div>
 
-  <!-- Botonera -->
+  <!-- Contenido estructurado -->
+  <div class="contenedor-bloques">
+    <table style="width: 100%; border-collapse: collapse;">
+      <!-- Bloque 1 -->
+      <tr>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
+          <div style="font-family: Arial, sans-serif; font-size: 15px; text-align: justify; max-width: 450px;">
+            <p>
+              En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
+            </p>
+          </div>
+        </td>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px; text-align: center;">
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" style="width: 8cm; height: 5cm; object-fit: contain;" />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <p class="texto-centrado">
+            En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento.<br />
+            Soluciones legales que generan confianza y resultados
+          </p>
+        </td>
+      </tr>
+
+      <!-- Bloque 2: Área Judicial -->
+      <tr>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px; text-align: center;">
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png" alt="Imagen Área Judicial" style="width: 8cm; height: 5cm; object-fit: contain;" />
+        </td>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
+          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+            <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Judicial</div>
+            <p>
+              Representación y patrocinio en procesos judiciales, ejercido por profesionales especializados en las siguientes áreas:
+            </p>
+            <ul>
+              <li>Derecho Civil</li>
+              <li>Derecho Penal</li>
+              <li>Derecho Laboral</li>
+              <li>Derecho Administrativo</li>
+              <li>Derecho Constitucional</li>
+              <li>Derecho de Familia</li>
+              <li>Derecho de Menores</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Bloque 3: Área Laboral -->
+      <tr>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px;">
+          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+            <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Laboral</div>
+            <p>
+              Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.
+            </p>
+            <ul>
+              <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
+              <li>Elaboración de políticas de contratación</li>
+              <li>Elaboración de todo tipo de contratos de trabajo</li>
+              <li>Asesoría en terminación de relaciones laborales</li>
+            </ul>
+          </div>
+        </td>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 0px 20px; text-align: center;">
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio2.png" alt="Imagen Área Laboral" style="width: 8cm; height: 5cm; object-fit: contain;" />
+        </td>
+      </tr>
+
+      <!-- Bloque 4: Área Societaria y Mercantil -->
+      <tr>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 40px 20px; text-align: center;">
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png" alt="Imagen Área Societaria" style="width: 8cm; height: 5cm; object-fit: contain;" />
+        </td>
+        <td style="width: 50%; vertical-align: top; padding: 30px 20px 40px 20px;">
+          <div style="font-family: Arial, sans-serif; font-size: 15px; max-width: 450px; text-align: justify;">
+            <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Area Societaria y Mercantil</div>
+            <p>
+              Ponemos a su disposición la asesoría societaria completa para estructurar, crear, transformar y proteger jurídicamente su empresa; y, además, una amplia gama de servicios en temas mercantiles, que le brindarán la seguridad de prevenir conflictos internos y externos o solucionar los conflictos existentes, además de proteger sus relaciones jurídicas con entidades públicas o privadas en procesos relacionados con inversiones.
+            </p>
+            <ul>
+              <li>Constitución y domiciliación de compañías</li>
+              <li>Fusión y escisión de compañías</li>
+              <li>Disolución y liquidación de compañías</li>
+              <li>Reformas de estatutos sociales</li>
+              <li>Transferencia de acciones y participaciones</li>
+              <li>Actualización de libros sociales</li>
+              <li>Gestión de trámites administrativos ante los organismos de control</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Botonera actualizada -->
   <div class="botonera">
     <a href="../index.html">Inicio</a>
     <a href="nuestra-firma.html">Nuestra Firma</a>
@@ -92,69 +165,6 @@
     <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
     <a href="nuestros-clientes.html">Nuestros Clientes</a>
     <a href="nuestro-contacto.html">Contáctenos</a>
-  </div>
-
-  <!-- Introducción -->
-  <div class="bloque">
-    <div class="bloque-texto">
-      En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
-    </div>
-    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png" alt="Imagen Lara & Asociados" />
-  </div>
-
-  <div class="texto-centrado">
-    En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento. Soluciones legales que generan confianza y resultados.
-  </div>
-
-  <!-- Área Judicial -->
-  <div class="bloque">
-    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio-imagen.png" alt="Imagen Área Judicial" />
-    <div class="bloque-texto">
-      <div class="bloque-titulo">Area Judicial</div>
-      Representación y patrocinio en procesos judiciales, ejercido por profesionales especializados en las siguientes áreas:
-      <ul>
-        <li>Derecho Civil</li>
-        <li>Derecho Penal</li>
-        <li>Derecho Laboral</li>
-        <li>Derecho Administrativo</li>
-        <li>Derecho Constitucional</li>
-        <li>Derecho de Familia</li>
-        <li>Derecho de Menores</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Área Laboral -->
-  <div class="bloque">
-    <div class="bloque-texto">
-      <div class="bloque-titulo">Area Laboral</div>
-      Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.
-      <ul>
-        <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
-        <li>Elaboración de políticas de contratación</li>
-        <li>Elaboración de todo tipo de contratos de trabajo</li>
-        <li>Asesoría en terminación de relaciones laborales</li>
-      </ul>
-    </div>
-    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio-imagen.png" alt="Imagen Área Laboral" />
-  </div>
-
-  <!-- Área Societaria y Mercantil -->
-  <div class="bloque">
-    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio-imagen.png" alt="Imagen Área Societaria" />
-    <div class="bloque-texto">
-      <div class="bloque-titulo">Area Societaria y Mercantil</div>
-      Ponemos a su disposición la asesoría societaria completa para estructurar, crear, transformar y proteger jurídicamente su empresa; y, además, una amplia gama de servicios en temas mercantiles, que le brindarán la seguridad de prevenir conflictos internos y externos o solucionar los conflictos existentes, además de proteger sus relaciones jurídicas con entidades públicas o privadas en procesos relacionados con inversiones.
-      <ul>
-        <li>Constitución y domiciliación de compañías</li>
-        <li>Fusión y escisión de compañías</li>
-        <li>Disolución y liquidación de compañías</li>
-        <li>Reformas de estatutos sociales</li>
-        <li>Transferencia de acciones y participaciones</li>
-        <li>Actualización de libros sociales</li>
-        <li>Gestión de trámites administrativos ante los organismos de control</li>
-      </ul>
-    </div>
   </div>
 
 </body>
