@@ -39,7 +39,7 @@
       text-align: center;
     }
     .bloque3-lista li {
-      margin-bottom: 4px;
+      margin-bottom: 4px; /* Ajustado el espaciado entre viñetas */
       padding-left: 0;
       list-style-position: outside;
     }
@@ -51,7 +51,12 @@
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
-      color: #06326E;
+      color: #06326E; /* Azul corporativo */
+    }
+    .flex-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .texto-justificado {
       font-family: Arial, sans-serif;
@@ -68,45 +73,257 @@
 </head>
 <body>
 
+  <!-- Título principal -->
   <div class="titulo-principal">Nuestro Portafolio de Servicios</div>
 
-  <div class="contenedor-bloques">
-    <table style="width: 100%; border-collapse: collapse;">
+ <!-- Contenido estructurado -->
+<div class="contenedor-bloques">
+  <table style="width: 100%; border-collapse: collapse;">
 
-      <!-- Bloque 1 -->
-      <tr>
-        <td style="width:50%; vertical-align:middle; padding:30px 20px;">
-          <div class="texto-justificado">
-            En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
-          </div>
-        </td>
-        <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
-               alt="Imagen Lara & Asociados"
-               style="width:8cm; height:5cm; object-fit:contain;" />
-        </td>
-      </tr>
+    <!-- Bloque 1 -->
+    <tr>
+      <td style="width:50%; vertical-align:middle; padding:30px 20px;">
+        <div class="texto-justificado">
+          En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
+             alt="Imagen Lara & Asociados"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
 
-      <!-- Texto central -->
-      <tr>
-        <td colspan="2">
-          <p class="texto-centrado">
-            En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento.<br />
-            Soluciones legales que generan confianza y resultados
-          </p>
-        </td>
-      </tr>
+    <!-- Bloque central -->
+    <tr>
+      <td colspan="2">
+        <p class="texto-centrado">
+          En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento.<br />
+          Soluciones legales que generan confianza y resultados
+        </p>
+      </td>
+    </tr>
 
-      <!-- BLOQUES DE ÁREAS -->
-      <!-- (Bloques 2 a 10 están exactamente como los copiaste tú, sin alterar nada) -->
-      <!-- Para ahorrar espacio en esta vista, los incluyo con exactitud técnica, sin resumir. Si deseas, puedo dividirlos también por sección -->
+    <!-- Bloque 2: Área Judicial -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png"
+             alt="Imagen Área Judicial"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Judicial</div>
+          <p>Representación y patrocinio en procesos judiciales, ejercido por profesionales especializados en las siguientes áreas:</p>
+          <ul class="bloque3-lista">
+            <li>Derecho Civil</li>
+            <li>Derecho Penal</li>
+            <li>Derecho Laboral</li>
+            <li>Derecho Administrativo</li>
+            <li>Derecho Constitucional</li>
+            <li>Derecho de Familia</li>
+            <li>Derecho de Menores</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
 
-      <!-- ... Aquí van los bloques del 2 al 10, tal como los subiste ... -->
+    <!-- Bloque 3: Área Laboral -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Laboral</div>
+          <p>Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.</p>
+          <ul class="bloque3-lista">
+            <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
+            <li>Elaboración de políticas de contratación</li>
+            <li>Elaboración de todo tipo de contratos de trabajo</li>
+            <li>Asesoría en terminación de relaciones laborales</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio2.png"
+             alt="Imagen Área Laboral"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
 
-    </table>
-  </div>
+    <!-- Bloque 4: Área Societaria y Mercantil -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png"
+             alt="Imagen Área Societaria"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Societaria y Mercantil</div>
+          <p>Ponemos a su disposición la asesoría societaria completa para estructurar, crear, transformar y proteger jurídicamente su empresa; y, además, una amplia gama de servicios en temas mercantiles, que le brindarán la seguridad de prevenir conflictos internos y externos o solucionar los conflictos existentes, además de proteger sus relaciones jurídicas con entidades públicas o privadas en procesos relacionados con inversiones.</p>
+          <ul class="bloque3-lista">
+            <li>Constitución y domiciliación de compañías</li>
+            <li>Fusión y escisión de compañías</li>
+            <li>Disolución y liquidación de compañías</li>
+            <li>Reformas de estatutos sociales</li>
+            <li>Transferencia de acciones y participaciones</li>
+            <li>Actualización de libros sociales</li>
+            <li>Gestión de trámites administrativos ante los organismos de control</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
 
-  <!-- Botonera final -->
+    <!-- Bloque 5: Área Tributaria -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Tributaria</div>
+          <p>Soluciones integrales que le permitirán cumplir de manera oportuna con sus obligaciones tributarias, evitar sanciones por parte del órgano regulador, mitigar todo tipo de riesgos financieros; y, optimizar recursos.</p>
+          <ul class="bloque3-lista">
+            <li>Análisis y planificación tributaria</li>
+            <li>Cumplimiento de obligaciones tributarias de personas naturales y jurídicas</li>
+            <li>Contestación de requerimientos de la autoridad tributaria</li>
+            <li>Patrocinio de reclamos tributarios en vía administrativa y judicial</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+             alt="Imagen Área Tributaria"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 6: Área de Inversiones -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+             alt="Imagen Área de Inversiones"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area de Inversiones</div>
+          <p>Asesoramos inversiones nacionales y extranjeras, garantizando la protección legal y financiera de todos sus negocios.</p>
+          <p>Asesoría sobre el Régimen Legal de Inversiones en el Ecuador</p>
+          <ul class="bloque3-lista">
+            <li>Aplicación de incentivos tributarios y no tributarios</li>
+            <li>Negociación de contratos de inversión con el Estado Ecuatoriano</li>
+            <li>Análisis legal, económico y financiero de inversiones</li>
+            <li>Asesoría para el mejoramiento del clima de negocios empresarial</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Bloque 7: Área de Propiedad Intelectual e Industrial -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area de Propiedad Intelectual e Industrial</div>
+          <p>Nuestra labor no se limita exclusivamente al registro de marcas, patentes, lemas y nombres comerciales, sino, además, a la actuación para ejercer la tutela de sus derechos en todas las instancias necesarias. Protegemos sus activos intangibles.</p>
+          <ul class="bloque3-lista">
+            <li>Protección de derechos de autor</li>
+            <li>Registro de signos distintivos</li>
+            <li>Registros sanitarios</li>
+            <li>Variedades vegetales</li>
+            <li>Negociación y elaboración de contratos de transferencia de tecnología</li>
+            <li>Negociación y elaboración de contratos de licencia</li>
+            <li>Tutela administrativa de derechos de propiedad intelectual</li>
+            <li>Litigios por infracciones de derechos de propiedad intelectual</li>
+            <li>Oposiciones a registros de marcas, patentes, diseños industriales</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio5.png"
+             alt="Imagen Área Propiedad Intelectual"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 8: Área de Contratación Pública -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area de Contratación Pública</div>
+          <p>Asistencia legal integral en todas las fases del proceso de contratación con el Estado: preparatoria, precontractual, contractual y post contractual.</p>
+          <p>Servicios clave:</p>
+          <ul class="bloque3-lista">
+            <li>Análisis legal y financiero de documentos preparatorios</li>
+            <li>Direccionamiento legal durante el proceso de contratación</li>
+            <li>Elaboración y presentación de ofertas exitosas</li>
+            <li>Reclamos de oferentes en procedimiento precontractual</li>
+            <li>Asesoramiento legal previo a la suscripción de contratos</li>
+            <li>Gestión de solicitudes para prórrogas de plazo o suspensión de contratos</li>
+            <li>Gestión de solicitudes de contratos complementarios y modificatorios</li>
+            <li>Gestión para la consecución de pagos detenidos por la entidad contratante</li>
+            <li>Reclamaciones o denuncias fundamentadas ante la entidad contratante</li>
+            <li>Patrocinio y gestión de solicitudes de nulidad de procesos de contratación</li>
+            <li>Patrocinio de oferentes y contratistas, en sede administrativa o judicial</li>
+            <li>Defensa técnica en auditorías de la Contraloría General del Estado</li>
+            <li>Análisis y estructuración de modalidades de gestión de servicios</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio6.png"
+             alt="Imagen Área Contratación Pública"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 9: Área de Migración y Extranjería -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area de Migración y Extranjería</div>
+          <p>Si usted es extranjero, nuestra Firma le brindará el asesoramiento necesario para permitir su ingreso y permanencia legal en el Ecuador, ya sea en calidad de inmigrante o de no inmigrante. Esto implica, además, la utilización de los mecanismos más idóneos para que los procesos de obtención de documentos migratorios se tornen ágiles y oportunos.</p>
+          <ul class="bloque3-lista">
+            <li>Obtención de visas para extranjeros (inmigrante y no inmigrante)</li>
+            <li>Solicitud de renovación de visas</li>
+            <li>Prórroga de estancia para extranjeros no residentes</li>
+            <li>Mantenimiento de calidad migratoria de empresarios extranjeros y familias</li>
+            <li>Cambio de calidad migratoria</li>
+            <li>Tramitación de residencia</li>
+            <li>Obtención de documentos de identidad</li>
+            <li>Habilitación de documentos para trabajar en el Ecuador</li>
+            <li>Obtención de la nacionalidad ecuatoriana por naturalización</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio7.png"
+             alt="Imagen Área Migración y Extranjería"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 10: Área de Recuperación de Cartera -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Área de Recuperación de Cartera</div>
+          <p>Gestión eficiente de cobranzas con enfoque estratégico, ético y adaptado a su operación empresarial.</p>
+          <ul class="bloque3-lista">
+            <li>Diagnóstico y calificación de la cartera que será objeto de recuperación</li>
+            <li>Determinación del tipo de gestión de cobranza a emplearse en recuperación</li>
+            <li>Establecimiento de políticas de recuperación de cartera</li>
+            <li>Gestión de cobranza a cargo de ejecutivos especializados</li>
+            <li>Utilización de la plataforma digital de la Firma</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio8.png"
+             alt="Imagen Área Recuperación de Cartera"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+  </table>
+</div>
+  <!-- Botonera actualizada -->
   <div class="botonera">
     <a href="../index.html">Inicio</a>
     <a href="nuestra-firma.html">Nuestra Firma</a>
