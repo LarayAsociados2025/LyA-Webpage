@@ -1,46 +1,236 @@
+<!-- Página: Nuestro Staff de Profesionales -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sección</title>
-  <link rel="stylesheet" href="../css/estilos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-  <script defer src="../js/plantilla.js"></script>
+  <title>Nuestro Staff de Profesionales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .titulo-principal {
+      background-color: #06326E;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .botonera {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .botonera a {
+      display: inline-block;
+      background-color: #007A82;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      min-width: 260px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    }
+    .bloque3-lista li {
+      margin-bottom: 4px; /* Ajustado el espaciado entre viñetas */
+      padding-left: 0;
+      list-style-position: outside;
+    }
+    .contenedor-bloques {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .texto-centrado {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #06326E; /* Azul corporativo */
+    }
+    .flex-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .texto-justificado {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      max-width: 450px;
+      text-align: justify;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Aquí se insertará dinámicamente el encabezado -->
-  <div id="encabezado"></div>
+  <!-- Título principal -->
+  <div class="titulo-principal">Nuestro Portafolio de Servicios</div>
 
-  <main id="contenido">
-    <!-- Aquí colocas el contenido personalizado de cada página -->
+ <!-- Contenido estructurado -->
+<div class="contenedor-bloques">
+  <table style="width: 100%; border-collapse: collapse;">
 
-    <section class="bloque">
-      <h2 class="titulo-seccion">Título de Ejemplo</h2>
-      <p class="texto-justificado">
-        Este es un ejemplo de texto. Aquí podrás incluir el contenido específico de esta sección.
-      </p>
-    </section>
+    <!-- Bloque 1 -->
+    <tr>
+      <td style="width:50%; vertical-align:middle; padding:30px 20px;">
+        <div class="texto-justificado">
+          En Lara & Asociados Consultores Legales ofrecemos un portafolio integral de servicios legales y empresariales, organizados en áreas de especialización y gestionados por un equipo multidisciplinario. Acompañamos a nuestros clientes en cada paso, asegurando soluciones eficientes, oportunas y con alto estándar profesional.
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
+             alt="Imagen Lara & Asociados"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
 
-  </main>
+    <!-- Bloque central -->
+    <tr>
+      <td colspan="2">
+        <p class="texto-centrado">
+          En Lara & Asociados cada servicio está diseñado para proteger su seguridad jurídica y fortalecer su crecimiento.<br />
+          Soluciones legales que generan confianza y resultados
+        </p>
+      </td>
+    </tr>
 
- <!-- Botoneras -->
-<div class="botonera">
-  <div class="columna">
-    <a href="../index.html" class="boton">Inicio</a>
-    <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
-    <a href="nuestra-mision.html" class="boton">Nuestra Misión, Visión y Valores</a>
-    <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
-    <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
-  </div>
-  <div class="columna">
-    <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
-    <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
-    <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
-    <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
-  </div>
+    <!-- Bloque 2: Área Judicial -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png"
+             alt="Imagen Área Judicial"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Judicial</div>
+          <p>Representación y patrocinio en procesos judiciales, ejercido por profesionales especializados en las siguientes áreas:</p>
+          <ul class="bloque3-lista">
+            <li>Derecho Civil</li>
+            <li>Derecho Penal</li>
+            <li>Derecho Laboral</li>
+            <li>Derecho Administrativo</li>
+            <li>Derecho Constitucional</li>
+            <li>Derecho de Familia</li>
+            <li>Derecho de Menores</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Bloque 3: Área Laboral -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Laboral</div>
+          <p>Las exigencias normativas requieren de la implementación y aplicación de políticas claras por parte del sector empresarial, relacionadas con la contratación y administración del talento humano. Para tal efecto, ofrecemos un conjunto de servicios que facilitan a nuestros clientes el manejo de las relaciones entre empleador y trabajador, evitando de esta manera posibles contingencias laborales.</p>
+          <ul class="bloque3-lista">
+            <li>Elaboración de políticas integrales de manejo de recursos humanos</li>
+            <li>Elaboración de políticas de contratación</li>
+            <li>Elaboración de todo tipo de contratos de trabajo</li>
+            <li>Asesoría en terminación de relaciones laborales</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio2.png"
+             alt="Imagen Área Laboral"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 4: Área Societaria y Mercantil -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png"
+             alt="Imagen Área Societaria"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Societaria y Mercantil</div>
+          <p>Ponemos a su disposición la asesoría societaria completa para estructurar, crear, transformar y proteger jurídicamente su empresa; y, además, una amplia gama de servicios en temas mercantiles, que le brindarán la seguridad de prevenir conflictos internos y externos o solucionar los conflictos existentes, además de proteger sus relaciones jurídicas con entidades públicas o privadas en procesos relacionados con inversiones.</p>
+          <ul class="bloque3-lista">
+            <li>Constitución y domiciliación de compañías</li>
+            <li>Fusión y escisión de compañías</li>
+            <li>Disolución y liquidación de compañías</li>
+            <li>Reformas de estatutos sociales</li>
+            <li>Transferencia de acciones y participaciones</li>
+            <li>Actualización de libros sociales</li>
+            <li>Gestión de trámites administrativos ante los organismos de control</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Bloque 5: Área Tributaria -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area Tributaria</div>
+          <p>Soluciones integrales que le permitirán cumplir de manera oportuna con sus obligaciones tributarias, evitar sanciones por parte del órgano regulador, mitigar todo tipo de riesgos financieros; y, optimizar recursos.</p>
+          <ul class="bloque3-lista">
+            <li>Análisis y planificación tributaria</li>
+            <li>Cumplimiento de obligaciones tributarias de personas naturales y jurídicas</li>
+            <li>Contestación de requerimientos de la autoridad tributaria</li>
+            <li>Patrocinio de reclamos tributarios en vía administrativa y judicial</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+             alt="Imagen Área Tributaria"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
+
+    <!-- Bloque 6: Área de Inversiones (modificado) -->
+<tr>
+  <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+         alt="Imagen Área de Inversiones"
+         style="width:8cm; height:5cm; object-fit:contain;" />
+  </td>
+  <td style="width:50%; vertical-align:top; padding:30px 20px;">
+    <div class="texto-justificado">
+      <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Area de Inversiones</div>
+      <p>Asesoramos sus inversiones nacionales y extranjeras, garantizando la protección legal y financiera de todos sus negocios.</p>
+      <ul class="bloque3-lista">
+        <li>Asesoría sobre el Régimen Legal de Inversiones en el Ecuador</li>
+        <li>Aplicación de incentivos tributarios y no tributarios</li>
+        <li>Negociación de contratos de inversión con el Estado Ecuatoriano</li>
+        <li>Análisis legal, económico y financiero de inversiones</li>
+        <li>Asesoría para el mejoramiento del clima de negocios empresarial</li>
+      </ul>
+    </div>
+  </td>
+</tr>
+
+    
+
+  </table>
 </div>
+  <!-- Botonera actualizada -->
+  <div class="botonera">
+    <a href="../index.html">Inicio</a>
+    <a href="nuestra-firma.html">Nuestra Firma</a>
+    <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
+    <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
+    <a href="nuestro-staff.html">Nuestro Staff de Profesionales</a>
+    <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
+    <a href="nuestros-clientes.html">Nuestros Clientes</a>
+    <a href="nuestro-contacto.html">Contáctenos</a>
+  </div>
 
 </body>
 </html>
