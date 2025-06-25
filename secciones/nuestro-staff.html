@@ -11,8 +11,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
-      color: #06326E;
     }
     .titulo-principal {
       background-color: #06326E;
@@ -21,12 +19,10 @@
       font-size: 36px;
       text-align: center;
       padding: 15px 0;
-      margin-bottom: 20px;
     }
     .botonera {
       text-align: center;
-      margin: 40px auto 20px auto;
-      max-width: 760px; /* Para que coincida con el ancho del contenedor */
+      margin-top: 40px;
     }
     .botonera a {
       display: inline-block;
@@ -47,10 +43,9 @@
       padding-left: 0;
       list-style-position: outside;
     }
-    /* Contenedor principal centrado con ancho fijo para alinear con botonera */
     .contenedor-bloques {
-      width: 760px;
-      margin: 0 auto 0 auto;
+      width: 90%;
+      margin: 0 auto;
     }
     .texto-centrado {
       text-align: center;
@@ -74,29 +69,6 @@
       margin-top: 0;
       margin-bottom: 20px;
     }
-    /* Responsive adjustments */
-    @media (max-width: 800px) {
-      .contenedor-bloques {
-        width: 95%;
-        margin: 0 auto;
-      }
-      table, tr, td {
-        display: block;
-        width: 100%;
-      }
-      td {
-        padding: 10px 0 !important;
-      }
-      .texto-justificado {
-        max-width: 100%;
-      }
-      .botonera a {
-        min-width: auto;
-        width: 90%;
-        margin: 8px auto;
-        display: block;
-      }
-    }
   </style>
 </head>
 <body>
@@ -104,154 +76,155 @@
   <!-- Título principal -->
   <div class="titulo-principal">Nuestro Staff de Profesionales</div>
 
-  <!-- Contenedor centrado con ancho fijo -->
-  <div class="contenedor-bloques">
-    <table style="width: 100%; border-collapse: collapse;">
+ <!-- Contenido estructurado -->
+<div class="contenedor-bloques">
+  <table style="width: 100%; border-collapse: collapse;">
 
-      <!-- Bloque 1 -->
-      <tr>
-        <td style="width:50%; vertical-align:middle; padding:30px 20px;">
-          <div class="texto-justificado">
-            En Lara & Asociados Consultores Legales creemos que los resultados excepcionales se construyen sobre una base de experiencia diversa y una colaboración perfecta. El éxito de nuestra gestión radica en contar con un equipo de abogados altamente capacitados y experimentados, que utilizan su conocimiento y habilidades en el manejo de información legal y jurídica actualizada, con el objetivo de brindar servicios enfocados en prevenir, mitigar o solucionar sus contingencias legales.
-          </div>
-        </td>
-        <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
-               alt="Imagen Lara & Asociados"
-               style="width:8cm; height:5cm; object-fit:contain;" />
-        </td>
-      </tr>
+    <!-- Bloque 1 -->
+    <tr>
+      <td style="width:50%; vertical-align:middle; padding:30px 20px;">
+        <div class="texto-justificado">
+          En Lara & Asociados Consultores Legales creemos que los resultados excepcionales se construyen sobre una base de experiencia diversa y una colaboración perfecta. El éxito de nuestra gestión radica en contar con un equipo de abogados altamente capacitados y experimentados, que utilizan su conocimiento y habilidades en el manejo de información legal y jurídica actualizada, con el objetivo de brindar servicios enfocados en prevenir, mitigar o solucionar sus contingencias legales.
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
+             alt="Imagen Lara & Asociados"
+             style="width:8cm; height:5cm; object-fit:contain;" />
+      </td>
+    </tr>
 
-      <!-- Bloque central -->
-      <tr>
-        <td colspan="2">
-          <p class="texto-centrado">
-            El Staff de Profesionales de la Firma reúne a abogados, economistas, auditores y contadores, que aportan su conocimiento para crear soluciones integrales diseñadas para asegurar sus intereses e impulsar su éxito.<br />
-            Le invitamos a conocer a nuestros profesionales
-          </p>
-        </td>
-      </tr>
+    <!-- Bloque central -->
+    <tr>
+      <td colspan="2">
+        <p class="texto-centrado">
+          El Staff de Profesionales de la Firma reúne a abogados, economistas, auditores y contadores, que aportan su conocimiento para crear soluciones integrales diseñadas para asegurar sus intereses e impulsar su éxito.<br />
+          Le invitamos a conocer a nuestros profesionales
+        </p>
+      </td>
+    </tr>
 
-      <!-- Bloque 2: Dr. Paul Lara Izquierdo -->
-      <tr>
-        <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png"
-               alt="Imagen Dr. Paul Lara"
-               style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
-        </td>
-        <td style="width:50%; vertical-align:top; padding:30px 20px;">
-          <div class="texto-justificado">
-            <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Dr. Paul Lara Izquierdo</div>
-            <p>Doctor en Jurisprudencia, Abogado de los Tribunales de Justicia y Licenciado en Ciencias Jurídicas. Graduado en la Pontificia Universidad Católica del Ecuador. Socio Fundador de Lara & Asociados Consultores Legales. Experiencia en:</p>
-            <ul class="bloque3-lista">
-              <li>Derecho Civil</li>
-              <li>Derecho de Inversiones</li>
-              <li>Derecho Administrativo</li>
-              <li>Contratación Pública</li>
-              <li>Organizaciones Sociales</li>
-              <li>Recuperación de Cartera</li>
-             </ul>
-          </div>
-        </td>
-      </tr>
+    <!-- Bloque 2: Dr. Paul Lara Izquierdo -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio1.png"
+             alt="Imagen Dr. Paul Lara"
+             style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Dr. Paul Lara Izquierdo</div>
+          <p>Doctor en Jurisprudencia, Abogado de los Tribunales de Justicia y Licenciado en Ciencias Jurídicas. Graduado en la Pontificia Universidad Católica del Ecuador. Socio Fundador de Lara & Asociados Consultores Legales. Experiencia en:</p>
+          <ul class="bloque3-lista">
+            <li>Derecho Civil</li>
+            <li>Derecho de Inversiones</li>
+            <li>Derecho Administrativo</li>
+            <li>Contratación Pública</li>
+            <li>Organizaciones Sociales</li>
+            <li>Recuperación de Cartera</li>
+           </ul>
+        </div>
+      </td>
+    </tr>
 
-      <!-- Bloque 3: Abg. Monserrath Cordovillo Flores -->
-      <tr>
-        <td style="width:50%; vertical-align:top; padding:30px 20px;">
-          <div class="texto-justificado">
-            <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Abg. Monserrath Cordovillo Flores</div>
-            <p>Abogada de los Tribunales y Juzgados de la República del Ecuador y Licenciada en Ciencias Públicas y Sociales. Graduada en la Universidad Central del Ecuador. Experiencia en:</p>
-            <ul class="bloque3-lista">
-              <li>Derecho Civil</li>
-              <li>Derecho Administrativo</li>
-              <li>Gestión Interinstitucional</li>
-              <li>Gestión Social</li>
-              <li>Gestión Comunitaria</li>
-              <li>Sectores Estratégicos</li>
-              <li>Seguridad Ciudadana</li>
+    <!-- Bloque 3: Abg. Monserrath Cordovillo Flores -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Abg. Monserrath Cordovillo Flores</div>
+          <p>Abogada de los Tribunales y Juzgados de la República del Ecuador y Licenciada en Ciencias Públicas y Sociales. Graduada en la Universidad Central del Ecuador. Experiencia en:</p>
+          <ul class="bloque3-lista">
+            <li>Derecho Civil</li>
+            <li>Derecho Administrativo</li>
+            <li>Gestión Interinstitucional</li>
+            <li>Gestión Social</li>
+            <li>Gestión Comunitaria</li>
+            <li>Sectores Estratégicos</li>
+            <li>Seguridad Ciudadana</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio2.png"
+             alt="Imagen Abg. Monserrath Cordovillo"
+             style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
+      </td>
+    </tr>
+
+    <!-- Bloque 4: Abg. Alexis Andrade Bravo -->
+    <tr>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png"
+             alt="Imagen Abg. Alexis Andrade"
+             style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
+      </td>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Abg. Alexis Andrade Bravo</div>
+          <p>Abogado de los Tribunales y Juzgados Penales y Civiles. Graduado en la Universidad Internacional de la Integración de la América Latina. Experiencia en:</p>
+          <ul class="bloque3-lista">
+            <li>Derecho Civil</li>
+            <li>Derecho de Familia</li>
+            <li>Derecho de Menores</li>
+            <li>Derecho Societario</li>
+            <li>Derecho de Mercantil</li>
+            <li>Tránsito</li>
             </ul>
-          </div>
-        </td>
-        <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio2.png"
-               alt="Imagen Abg. Monserrath Cordovillo"
-               style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
-        </td>
-      </tr>
+        </div>
+      </td>
+    </tr>
 
-      <!-- Bloque 4: Abg. Alexis Andrade Bravo -->
-      <tr>
-        <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio3.png"
-               alt="Imagen Abg. Alexis Andrade"
-               style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
-        </td>
-        <td style="width:50%; vertical-align:top; padding:30px 20px;">
-          <div class="texto-justificado">
-            <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Abg. Alexis Andrade Bravo</div>
-            <p>Abogado de los Tribunales y Juzgados Penales y Civiles. Graduado en la Universidad Internacional de la Integración de la América Latina. Experiencia en:</p>
-            <ul class="bloque3-lista">
-              <li>Derecho Civil</li>
-              <li>Derecho de Familia</li>
-              <li>Derecho de Menores</li>
-              <li>Derecho Societario</li>
-              <li>Derecho de Mercantil</li>
-              <li>Tránsito</li>
-            </ul>
-          </div>
-        </td>
-      </tr>
+    <!-- Bloque 5: Ing. Erica Arias Garzón -->
+    <tr>
+      <td style="width:50%; vertical-align:top; padding:30px 20px;">
+        <div class="texto-justificado">
+          <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Ing. Erica Arias Garzón</div>
+          <p>Ingeniera en Contabilidad y Auditoría, Contadora Pública Autorizada. Graduada en la Escuela Superior Politécnica del Chimborazo. Diplomado en el Programa de Gobernanza y Liderazgo Político, Escuela de Gobierno, IDE Business School. Socia de Lara & Asociados Consultores Legales. Experiencia en:</p>
+          <ul class="bloque3-lista">
+            <li>Revisión y análisis de documentación financiera</li>
+            <li>Control de inventarios</li>
+            <li>Manejo de nómina</li>
+            <li>Manejo de infraestructura y mantenimiento</li>
+            <li>Control y supervisión de bienes y existencias</li>
+            <li>Generación de procedimientos de contratación pública</li>
+            <li>Manejo del Portal de Compras Públicas</li>
+            <li>Ejecución de procesos administrativos</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+        <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+             alt="Imagen Ing. Erica Arias"
+             style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
+      </td>
+    </tr>
 
-      <!-- Bloque 5: Ing. Erica Arias Garzón -->
-      <tr>
-        <td style="width:50%; vertical-align:top; padding:30px 20px;">
-          <div class="texto-justificado">
-            <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Ing. Erica Arias Garzón</div>
-            <p>Ingeniera en Contabilidad y Auditoría, Contadora Pública Autorizada. Graduada en la Escuela Superior Politécnica del Chimborazo. Diplomado en el Programa de Gobernanza y Liderazgo Político, Escuela de Gobierno, IDE Business School. Socia de Lara & Asociados Consultores Legales. Experiencia en:</p>
-            <ul class="bloque3-lista">
-              <li>Revisión y análisis de documentación financiera</li>
-              <li>Control de inventarios</li>
-              <li>Manejo de nómina</li>
-              <li>Manejo de infraestructura y mantenimiento</li>
-              <li>Control y supervisión de bienes y existencias</li>
-              <li>Generación de procedimientos de contratación pública</li>
-              <li>Manejo del Portal de Compras Públicas</li>
-              <li>Ejecución de procesos administrativos</li>
-            </ul>
-          </div>
-        </td>
-        <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
-               alt="Imagen Ing. Erica Arias"
-               style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
-        </td>
-      </tr>
+    <!-- Bloque 6: Mgs. Vanessa Arias Garzón -->
+<tr>
+  <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
+    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
+         alt="Imagen Mgs. Vanessa Arias"
+         style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
+  </td>
+  <td style="width:50%; vertical-align:top; padding:30px 20px;">
+    <div class="texto-justificado">
+      <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Mgs. Vanessa Arias Garzón</div>
+      <p>Ingeniera en Contabilidad y Auditoría, Contadora Pública Autorizada. Graduada en la Universidad Nacional de Chimborazo. Magíster en Administración Pública de la Universidad de Especialidades Espíritu Santo. Maestrante de la Universidad Nacional de Rosario-Argentina en Política y Gestión de la Educación Superior. Socia de Lara & Asociados Consultores Legales. Experiencia en:</p>
+      <ul class="bloque3-lista">
+       <li>Revisión y análisis de documentación financiera</li>
+            <li>Control de inventarios</li>
+            <li>Manejo de nómina</li>
+            <li>Manejo de infraestructura y mantenimiento</li>
+            <li>Control y supervisión de bienes y existencias</li>
+      </ul>
+    </div>
+  </td>
+</tr>
 
-      <!-- Bloque 6: Mgs. Vanessa Arias Garzón -->
-      <tr>
-        <td style="width:50%; vertical-align:top; text-align:center; padding:30px 20px;">
-          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/espacio4.png"
-               alt="Imagen Mgs. Vanessa Arias"
-               style="width:6cm; height:6cm; object-fit:cover; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,0.2);" />
-        </td>
-        <td style="width:50%; vertical-align:top; padding:30px 20px;">
-          <div class="texto-justificado">
-            <div style="text-align:center; font-weight:bold; margin-bottom:10px;">Mgs. Vanessa Arias Garzón</div>
-            <p>Ingeniera en Contabilidad y Auditoría, Contadora Pública Autorizada. Graduada en la Universidad Nacional de Chimborazo. Magíster en Administración Pública de la Universidad de Especialidades Espíritu Santo. Maestrante de la Universidad Nacional de Rosario-Argentina en Política y Gestión de la Educación Superior. Socia de Lara & Asociados Consultores Legales. Experiencia en:</p>
-            <ul class="bloque3-lista">
-              <li>Revisión y análisis de documentación financiera</li>
-              <li>Control de inventarios</li>
-              <li>Manejo de nómina</li>
-              <li>Manejo de infraestructura y mantenimiento</li>
-              <li>Control y supervisión de bienes y existencias</li>
-            </ul>
-          </div>
-        </td>
-      </tr>
+    
 
-    </table>
-  </div>
-
+  </table>
+</div>
   <!-- Botonera actualizada -->
   <div class="botonera">
     <a href="../index.html">Inicio</a>
