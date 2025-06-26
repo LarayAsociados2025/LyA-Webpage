@@ -37,7 +37,12 @@
       height: 35px;
       line-height: 35px;
       text-align: center;
-    }
+    }/* Aquí quitamos el zoom en las botoneras */
+.botonera a:hover {
+  transform: none !important;
+  transition: none !important;
+}
+    
     .bloque3-lista li {
       margin-bottom: 4px; /* Ajustado el espaciado entre viñetas */
       padding-left: 0;
