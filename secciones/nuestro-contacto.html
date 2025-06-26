@@ -1,46 +1,122 @@
+<!-- Página: Comuníquese con Nosotros -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sección</title>
-  <link rel="stylesheet" href="../css/estilos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-  <script defer src="../js/plantilla.js"></script>
+  <title>Comuníquese con Nosotros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .titulo-principal {
+      background-color: #06326E;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .botonera {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .botonera a {
+      display: inline-block;
+      background-color: #007A82;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      min-width: 260px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    }
+    .bloque3-lista li {
+      margin-bottom: 4px; /* Ajustado el espaciado entre viñetas */
+      padding-left: 0;
+      list-style-position: outside;
+    }
+    .contenedor-bloques {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .texto-centrado {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #06326E; /* Azul corporativo */
+    }
+    .flex-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .texto-justificado {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      max-width: 450px;
+      text-align: justify;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Aquí se insertará dinámicamente el encabezado -->
-  <div id="encabezado"></div>
+  <!-- Título principal -->
+  <div class="titulo-principal">Nuestros Clientes</div>
 
-  <main id="contenido">
-    <!-- Aquí colocas el contenido personalizado de cada página -->
+ <!-- Contenido estructurado -->
+<div class="contenedor-bloques">
+  <table style="width: 100%; border-collapse: collapse;">
 
-    <section class="bloque">
-      <h2 class="titulo-seccion">Título de Ejemplo</h2>
-      <p class="texto-justificado">
-        Este es un ejemplo de texto. Aquí podrás incluir el contenido específico de esta sección.
-      </p>
-    </section>
+    <!-- Bloque 1 -->
+<tr>
+  <td style="width:50%; vertical-align:middle; padding:30px 20px; text-align: center;">
+    <div class="texto-justificado" style="display: inline-block; max-width: 90%; text-align: justify;">
+      O, aún mejor, !Venga a visitarnos! Ejercemos la abogacía ía a día, actuando siempre razonable y equitativamente, con el objetivo de alcanzar la justicia en beneficio de nuestros clientes y de la sociedad.
+    </div>
+  </td>
+  <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
+    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
+         alt="Imagen Lara & Asociados"
+         style="width:8cm; height:5cm; object-fit:contain;" />
+  </td>
+</tr>
 
-  </main>
+    <!-- Bloque central -->
+    <tr>
+      <td colspan="2">
+        <p class="texto-centrado">
+          Su continuo apoyo ha sido fundamental para nuestro éxito.<br />
+          Gracias
+        </p>
+      </td>
+    </tr>
 
-  <!-- Botoneras -->
-<div class="botonera">
-  <div class="columna">
-    <a href="../index.html" class="boton">Inicio</a>
-    <a href="nuestra-firma.html" class="boton">Nuestra Firma</a>
-    <a href="nuestra-mision.html" class="boton">Nuestra Misión, Visión y Valores</a>
-    <a href="nuestra-filosofia.html" class="boton">Nuestra Filosofía</a>
-    <a href="nuestros-servicios.html" class="boton">Nuestro Portafolio de Servicios</a>
-  </div>
-  <div class="columna">
-    <a href="nuestro-staff.html" class="boton">Nuestro Staff de Profesionales</a>
-    <a href="nuestra-estructura.html" class="boton">Nuestra Estructura Organizacional</a>
-    <a href="nuestros-clientes.html" class="boton">Nuestros Clientes</a>
-    <a href="nuestro-contacto.html" class="boton">Contáctenos</a>
-  </div>
+     </table>
 </div>
+  <!-- Botonera actualizada -->
+  <div class="botonera">
+    <a href="../index.html">Inicio</a>
+    <a href="nuestra-firma.html">Nuestra Firma</a>
+    <a href="nuestra-mision.html">Nuestra Misión, Visión y Valores</a>
+    <a href="nuestra-filosofia.html">Nuestra Filosofía</a>
+    <a href="nuestros-servicios.html">Nuestro Portafolio de Servicios</a>
+    <a href="nuestro-staff.html">Nuestro Staff de Profesionales</a>
+    <a href="nuestra-estructura.html">Nuestra Estructura Organizacional</a>
+    <a href="nuestros-clientes.html">Nuestros Clientes</a>
+  </div>
 
 </body>
 </html>
