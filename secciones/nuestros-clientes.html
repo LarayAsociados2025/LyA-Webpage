@@ -39,7 +39,7 @@
       text-align: center;
     }
     .bloque3-lista li {
-      margin-bottom: 4px; /* Ajustado el espaciado entre viñetas */
+      margin-bottom: 4px;
       padding-left: 0;
       list-style-position: outside;
     }
@@ -51,12 +51,7 @@
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
-      color: #06326E; /* Azul corporativo */
-    }
-    .flex-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      color: #06326E;
     }
     .texto-justificado {
       font-family: Arial, sans-serif;
@@ -69,6 +64,51 @@
       margin-top: 0;
       margin-bottom: 20px;
     }
+    .gracias {
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      color: #06326E;
+      margin-top: 10px;
+    }
+
+    /* Carrusel de logos */
+    .carrusel-container {
+      position: relative;
+      width: 90%;
+      margin: 40px auto 0 auto;
+      overflow: hidden;
+    }
+    .carrusel-logotipos {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
+    }
+    .carrusel-logotipos img {
+      height: 60px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .carrusel-boton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 122, 130, 0.8);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+    }
+    .carrusel-boton.izquierda {
+      left: 0;
+    }
+    .carrusel-boton.derecha {
+      right: 0;
+    }
   </style>
 </head>
 <body>
@@ -76,37 +116,55 @@
   <!-- Título principal -->
   <div class="titulo-principal">Nuestros Clientes</div>
 
- <!-- Contenido estructurado -->
-<div class="contenedor-bloques">
-  <table style="width: 100%; border-collapse: collapse;">
+  <!-- Contenido estructurado -->
+  <div class="contenedor-bloques">
+    <table style="width: 100%; border-collapse: collapse;">
+      <!-- Bloque 1 -->
+      <tr>
+        <td style="width:50%; vertical-align:middle; padding:30px 20px; text-align: center;">
+          <div class="texto-justificado" style="display: inline-block; max-width: 90%; text-align: justify;">
+            Para Lara & Asociados Consultores Legales contar con la fidelidad de sus clientes es lo más valioso y satisfactorio. Sabemos que existen muchas opciones en el medio, pero el hecho de que ustedes nos hayan elegido y confiado en nosotros, no solo nos llena de gratitud, sino que nos motiva a esforzarnos cada día para ofrecerle la mejor calidad de servicios con una atención personalizada.
+          </div>
+        </td>
+        <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
+          <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
+               alt="Imagen Lara & Asociados"
+               style="width:8cm; height:5cm; object-fit:contain;" />
+        </td>
+      </tr>
 
-    <!-- Bloque 1 -->
-<tr>
-  <td style="width:50%; vertical-align:middle; padding:30px 20px; text-align: center;">
-    <div class="texto-justificado" style="display: inline-block; max-width: 90%; text-align: justify;">
-      Para Lara & Asociados Consultores Legales contar con la fidelidad de sus clientes es lo más valioso y satisfactorio. Sabemos que existen muchas opciones en el medio, pero el hecho de que ustedes nos hayan elegido y confiado en nosotros, no solo nos llena de gratitud, sino que nos motiva a esforzarnos cada día para ofrecerle la mejor calidad de servicios con una atención personalizada
+      <!-- Bloque central -->
+      <tr>
+        <td colspan="2">
+          <p class="texto-centrado">
+            Su continuo apoyo ha sido fundamental para nuestro éxito.
+          </p>
+          <hr style="width: 40%; margin: 10px auto;">
+          <p class="gracias">Gracias</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Carrusel de logotipos -->
+  <div class="carrusel-container">
+    <button class="carrusel-boton izquierda" onclick="moverCarrusel(-1)">❮</button>
+    <div class="carrusel-logotipos" id="carruselLogos">
+      <img src="https://via.placeholder.com/150x60?text=Logo+1" alt="Logo 1" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+2" alt="Logo 2" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+3" alt="Logo 3" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+4" alt="Logo 4" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+5" alt="Logo 5" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+6" alt="Logo 6" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+7" alt="Logo 7" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+8" alt="Logo 8" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+9" alt="Logo 9" />
+      <img src="https://via.placeholder.com/150x60?text=Logo+10" alt="Logo 10" />
     </div>
-  </td>
-  <td style="width:50%; vertical-align:middle; text-align:center; padding:30px 20px;">
-    <img src="https://github.com/LarayAsociados2025/LyA-Webpage/raw/main/imagenes/lara1.png"
-         alt="Imagen Lara & Asociados"
-         style="width:8cm; height:5cm; object-fit:contain;" />
-  </td>
-</tr>
+    <button class="carrusel-boton derecha" onclick="moverCarrusel(1)">❯</button>
+  </div>
 
-    <!-- Bloque central -->
-    <tr>
-      <td colspan="2">
-        <p class="texto-centrado">
-          Su continuo apoyo ha sido fundamental para nuestro éxito.<br />
-          Gracias
-        </p>
-      </td>
-    </tr>
-
-     </table>
-</div>
-  <!-- Botonera actualizada -->
+  <!-- Botonera -->
   <div class="botonera">
     <a href="../index.html">Inicio</a>
     <a href="nuestra-firma.html">Nuestra Firma</a>
@@ -117,6 +175,18 @@
     <a href="nuestra-estructura.html">Nuestra Estructura Organizativa</a>
     <a href="nuestro-contacto.html">Contáctenos</a>
   </div>
+
+  <!-- Script para mover el carrusel -->
+  <script>
+    function moverCarrusel(direccion) {
+      const carrusel = document.getElementById('carruselLogos');
+      const scrollAmount = 200; // Puedes ajustar la cantidad de desplazamiento
+      carrusel.scrollBy({
+        left: direccion * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 </body>
 </html>
